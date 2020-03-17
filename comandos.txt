@@ -1,0 +1,5 @@
+http-server
+
+flask run
+
+phpliteadmin

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="col">
+        <form action="/compare" enctype="multipart/form-data" method="post">
+
+            <input type="file" name = "file1"></input>
+            <br/><br/>
+            <input type="file" name = "file2"></input>
+
+            <br/><br/>
+            <input type="radio" name="algorithm" value="comapre lines">comapre lines</input>
+            <input type="radio" name="algorithm" value="comapre sentences">comapre sentences</input>
+            <input type="radio" name="algorithm" value="comapre substrings">comapre substrings</input>
+
+            <br/><br/>
+            <input type="number" name="length "  ></input>
+
+            <br/><br/><br/>
+            <button type="submit" name="compare" >compare</button>
+
+
+        </form>
+
+
+        <!--<form>-->
+        <!--  <div class="form-group">-->
+        <!--        <input type="file" name="file1" class="form-control-file" id="exampleFormControlFile1">-->
+        <!--        <br/>-->
+
+        <!--        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>-->
+
+
+        <!--  </div>-->
+        <!--</form>-->
+
+
+    </div>
+
+{% endblock %}

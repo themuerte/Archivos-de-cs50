@@ -1,0 +1,1023 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/c9/node/bin/node',
+1 verbose cli   '/home/ubuntu/.c9/node/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--production',
+1 verbose cli   'https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz
+8 silly fetchOtherPackageData https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz
+9 silly cache add args [ 'https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz',
+9 silly cache add   null ]
+10 verbose cache add spec https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz',
+11 silly cache add   spec: 'https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz',
+11 silly cache add   type: 'remote' }
+12 silly mapToRegistry name https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   escapedName: null,
+15 silly mapToRegistry   name: null,
+15 silly mapToRegistry   rawSpec: 'https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz',
+15 silly mapToRegistry   spec: 'https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz',
+15 silly mapToRegistry   type: 'remote' }
+16 silly mapToRegistry uri https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz
+17 verbose addRemoteTarball https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz not in flight; adding
+18 verbose addRemoteTarball [ 'https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz',
+18 verbose addRemoteTarball   null ]
+19 info retry fetch attempt 1 at 4:43:32 PM
+20 info attempt registry request try #1 at 4:43:32 PM
+21 http fetch GET https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz
+22 verbose request id 4cf77bd49b121aae
+23 http fetch 200 https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz
+24 silly fetchAndShaCheck shasum ea1d75d62d4b21936d5b5cb6a535ee9112b17943
+25 verbose addTmpTarball /tmp/npm-224-49688253/dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz not in flight; adding
+26 verbose correctMkdir /opt/c9/tmp/.npm correctMkdir not in flight; initializing
+27 verbose makeDirectory /opt/c9/tmp/.npm creation not in flight; initializing
+28 silly makeDirectory /opt/c9/tmp/.npm uid: 1000 gid: 1000
+29 verbose addTmpTarball validating metadata from /tmp/npm-224-49688253/dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz
+30 verbose tar unpack /tmp/npm-224-49688253/dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz
+31 verbose tar unpacking to /tmp/npm-224-49688253/unpack-2532c5d7
+32 silly gentlyRm /tmp/npm-224-49688253/unpack-2532c5d7 is being purged
+33 verbose gentlyRm don't care about contents; nuking /tmp/npm-224-49688253/unpack-2532c5d7
+34 silly gunzTarPerm modes [ '775', '664' ]
+35 silly gunzTarPerm extractEntry
+36 silly gunzTarPerm extractEntry .gitignore
+37 silly gunzTarPerm extractEntry .nakignore
+38 silly gunzTarPerm extractEntry .travis.yml
+39 silly gunzTarPerm extractEntry LICENSE.txt
+40 silly gunzTarPerm extractEntry README.md
+41 silly gunzTarPerm extractEntry benchmark/
+42 silly gunzTarPerm extractEntry benchmark/benchmark.js
+43 silly gunzTarPerm extractEntry bin/
+44 silly gunzTarPerm extractEntry bin/nak
+45 silly gunzTarPerm extractEntry compile.js
+46 silly gunzTarPerm extractEntry lib/
+47 silly gunzTarPerm extractEntry lib/finalizer.js
+48 silly gunzTarPerm extractEntry lib/mergesort.js
+49 silly gunzTarPerm extractEntry lib/nak.js
+50 silly gunzTarPerm extractEntry lib/options.js
+51 silly gunzTarPerm extractEntry lib/path-filter.js
+52 silly gunzTarPerm extractEntry lib/walkdir.js
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm extractEntry script/
+55 silly gunzTarPerm extractEntry script/profiler
+56 silly gunzTarPerm extractEntry tests/
+57 silly gunzTarPerm extractEntry tests/.nakignore
+58 silly gunzTarPerm extractEntry tests/filelist_fixtures/
+59 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/
+60 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/a.txt
+61 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/b.txt
+62 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/p.txt
+63 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/subdir/
+64 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/subdir/.realhidden
+65 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/subdir/1.txt
+66 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/subdir/foo.js
+67 silly gunzTarPerm extractEntry tests/filelist_fixtures/1.txt
+68 silly gunzTarPerm extractEntry tests/filelist_fixtures/foo.js
+69 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/
+70 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/Toasty.gif
+71 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/
+72 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/.hidden
+73 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/.level3a/
+74 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/.level3a/.hidden
+75 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/.level3a/nothere.txt
+76 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/level2.rb
+77 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/level3/
+78 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/level3/level4/
+79 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/level3/level4/level4.txt
+80 silly gunzTarPerm extractEntry tests/filelist_fixtures/symlink-to-1.txt
+81 silly gunzTarPerm modified mode [ 'tests/filelist_fixtures/symlink-to-1.txt', 511, 509 ]
+82 silly gunzTarPerm extractEntry tests/filelist_fixtures/symlink-to-nowhere.txt
+83 silly gunzTarPerm modified mode [ 'tests/filelist_fixtures/symlink-to-nowhere.txt', 511, 509 ]
+84 silly gunzTarPerm extractEntry tests/filelist_test.js
+85 silly gunzTarPerm extractEntry tests/replace_fixtures/
+86 silly gunzTarPerm extractEntry tests/replace_fixtures/source/
+87 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file1.txt
+88 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file2.txt
+89 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file3.txt
+90 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file4.txt
+91 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file5.txt
+92 silly gunzTarPerm extractEntry tests/replace_test.js
+93 silly gunzTarPerm extractEntry tests/search_fixtures/
+94 silly gunzTarPerm extractEntry tests/search_fixtures/.file8_hidden.js
+95 silly gunzTarPerm extractEntry tests/search_fixtures/.gitignore
+96 silly gunzTarPerm extractEntry tests/search_fixtures/.nakignore
+97 silly gunzTarPerm extractEntry tests/search_fixtures/.root/
+98 silly gunzTarPerm extractEntry tests/search_fixtures/.root/file3.txt
+99 silly gunzTarPerm extractEntry tests/search_fixtures/.root/subdir/
+100 silly gunzTarPerm extractEntry tests/search_fixtures/.root/subdir/.realhidden
+101 silly gunzTarPerm extractEntry tests/search_fixtures/.root/subdir/file1.txt
+102 silly gunzTarPerm extractEntry tests/search_fixtures/dir/
+103 silly gunzTarPerm extractEntry tests/search_fixtures/dir/file7_ignorable.rb
+104 silly gunzTarPerm extractEntry tests/search_fixtures/file1.txt
+105 silly gunzTarPerm extractEntry tests/search_fixtures/file2.txt
+106 silly gunzTarPerm extractEntry tests/search_fixtures/file3.txt
+107 silly gunzTarPerm extractEntry tests/search_fixtures/file4_noext
+108 silly gunzTarPerm extractEntry tests/search_fixtures/file5_not_really_image.gif
+109 silly gunzTarPerm extractEntry tests/search_fixtures/file6_contains_nonascii.dat
+110 silly gunzTarPerm extractEntry tests/search_fixtures/file9_ignored_by_this_dir.txt
+111 silly gunzTarPerm extractEntry tests/search_fixtures/newdir/
+112 silly gunzTarPerm extractEntry tests/search_fixtures/newdir/deep_dir.js
+113 silly gunzTarPerm extractEntry tests/search_fixtures/symlink-to-file1.txt
+114 silly gunzTarPerm modified mode [ 'tests/search_fixtures/symlink-to-file1.txt', 511, 509 ]
+115 silly gunzTarPerm extractEntry tests/search_fixtures/thai.txt
+116 silly gunzTarPerm extractEntry tests/search_test.js
+117 silly gunzTarPerm extractEntry tests/sorting_fixtures/
+118 silly gunzTarPerm extractEntry tests/sorting_fixtures/README.md
+119 silly gunzTarPerm extractEntry tests/sorting_fixtures/a.txt
+120 silly gunzTarPerm extractEntry tests/sorting_fixtures/b.txt
+121 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/
+122 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/BBB.txt
+123 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/ZZZ.txt
+124 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/www/
+125 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/www/a.txt
+126 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/z.txt
+127 silly gunzTarPerm extractEntry tests/sorting_fixtures/p.txt
+128 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/
+129 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/a.txt
+130 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/b_folder/
+131 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/b_folder/l.txt
+132 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/c.txt
+133 silly gunzTarPerm extractEntry tests/sorting_fixtures/t.json
+134 silly gunzTarPerm extractEntry tests/sorting_fixtures/æ.txt
+135 silly gunzTarPerm extractEntry tests/sorting_test.js
+136 silly gunzTarPerm extractEntry tests/test_helpers.js
+137 silly gunzTarPerm extractEntry tests/test_runner.js
+138 warn excluding symbolic link tests/filelist_fixtures/symlink-to-1.txt -> 1.txt
+139 warn excluding symbolic link tests/filelist_fixtures/symlink-to-nowhere.txt -> nowhere.txt
+140 warn excluding symbolic link tests/search_fixtures/symlink-to-file1.txt -> file1.txt
+141 verbose correctMkdir /opt/c9/tmp/.npm correctMkdir not in flight; initializing
+142 silly cache afterAdd nak@0.3.3
+143 verbose afterAdd /opt/c9/tmp/.npm/nak/0.3.3/package/package.json not in flight; writing
+144 verbose correctMkdir /opt/c9/tmp/.npm correctMkdir not in flight; initializing
+145 verbose afterAdd /opt/c9/tmp/.npm/nak/0.3.3/package/package.json written
+146 silly install normalizeTree
+147 silly loadCurrentTree Finishing
+148 silly loadIdealTree Starting
+149 silly install loadIdealTree
+150 silly cloneCurrentTree Starting
+151 silly install cloneCurrentTreeToIdealTree
+152 silly cloneCurrentTree Finishing
+153 silly loadShrinkwrap Starting
+154 silly install loadShrinkwrap
+155 silly loadShrinkwrap Finishing
+156 silly loadAllDepsIntoIdealTree Starting
+157 silly install loadAllDepsIntoIdealTree
+158 silly resolveWithNewModule nak@0.3.3 checking installable status
+159 silly fetchNamedPackageData isbinaryfile
+160 silly mapToRegistry name isbinaryfile
+161 silly mapToRegistry using default registry
+162 silly mapToRegistry registry https://registry.npmjs.org/
+163 silly mapToRegistry data Result {
+163 silly mapToRegistry   raw: 'isbinaryfile',
+163 silly mapToRegistry   scope: null,
+163 silly mapToRegistry   escapedName: 'isbinaryfile',
+163 silly mapToRegistry   name: 'isbinaryfile',
+163 silly mapToRegistry   rawSpec: '',
+163 silly mapToRegistry   spec: 'latest',
+163 silly mapToRegistry   type: 'tag' }
+164 silly mapToRegistry uri https://registry.npmjs.org/isbinaryfile
+165 silly fetchNamedPackageData colors
+166 silly mapToRegistry name colors
+167 silly mapToRegistry using default registry
+168 silly mapToRegistry registry https://registry.npmjs.org/
+169 silly mapToRegistry data Result {
+169 silly mapToRegistry   raw: 'colors',
+169 silly mapToRegistry   scope: null,
+169 silly mapToRegistry   escapedName: 'colors',
+169 silly mapToRegistry   name: 'colors',
+169 silly mapToRegistry   rawSpec: '',
+169 silly mapToRegistry   spec: 'latest',
+169 silly mapToRegistry   type: 'tag' }
+170 silly mapToRegistry uri https://registry.npmjs.org/colors
+171 verbose request uri https://registry.npmjs.org/isbinaryfile
+172 verbose request no auth needed
+173 info attempt registry request try #1 at 4:43:32 PM
+174 http request GET https://registry.npmjs.org/isbinaryfile
+175 verbose request uri https://registry.npmjs.org/colors
+176 verbose request no auth needed
+177 info attempt registry request try #1 at 4:43:32 PM
+178 http request GET https://registry.npmjs.org/colors
+179 http 200 https://registry.npmjs.org/colors
+180 verbose headers { date: 'Tue, 17 Mar 2020 16:43:32 GMT',
+180 verbose headers   'content-type': 'application/json',
+180 verbose headers   'transfer-encoding': 'chunked',
+180 verbose headers   connection: 'keep-alive',
+180 verbose headers   'set-cookie': [ '__cfduid=d78127ef461719ecdd8a5a411bae94f2f1584463412; expires=Thu, 16-Apr-20 16:43:32 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+180 verbose headers   'cf-ray': '57582c698c96bcba-SEA',
+180 verbose headers   age: '2469',
+180 verbose headers   'cache-control': 'public, max-age=300',
+180 verbose headers   etag: 'W/"64409f180c5fe836269a137c233ef66d"',
+180 verbose headers   'last-modified': 'Sun, 22 Sep 2019 23:46:11 GMT',
+180 verbose headers   vary: 'accept-encoding, accept',
+180 verbose headers   'cf-cache-status': 'HIT',
+180 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+180 verbose headers   server: 'cloudflare',
+180 verbose headers   'content-encoding': 'gzip' }
+181 silly get cb [ 200,
+181 silly get   { date: 'Tue, 17 Mar 2020 16:43:32 GMT',
+181 silly get     'content-type': 'application/json',
+181 silly get     'transfer-encoding': 'chunked',
+181 silly get     connection: 'keep-alive',
+181 silly get     'set-cookie': [ '__cfduid=d78127ef461719ecdd8a5a411bae94f2f1584463412; expires=Thu, 16-Apr-20 16:43:32 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+181 silly get     'cf-ray': '57582c698c96bcba-SEA',
+181 silly get     age: '2469',
+181 silly get     'cache-control': 'public, max-age=300',
+181 silly get     etag: 'W/"64409f180c5fe836269a137c233ef66d"',
+181 silly get     'last-modified': 'Sun, 22 Sep 2019 23:46:11 GMT',
+181 silly get     vary: 'accept-encoding, accept',
+181 silly get     'cf-cache-status': 'HIT',
+181 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+181 silly get     server: 'cloudflare',
+181 silly get     'content-encoding': 'gzip' } ]
+182 verbose get saving colors to /opt/c9/tmp/.npm/registry.npmjs.org/colors/.cache.json
+183 verbose correctMkdir /opt/c9/tmp/.npm correctMkdir not in flight; initializing
+184 http 200 https://registry.npmjs.org/isbinaryfile
+185 verbose headers { date: 'Tue, 17 Mar 2020 16:43:32 GMT',
+185 verbose headers   'content-type': 'application/json',
+185 verbose headers   'transfer-encoding': 'chunked',
+185 verbose headers   connection: 'keep-alive',
+185 verbose headers   'set-cookie': [ '__cfduid=d8364589f80243b8095e0a96f418d2f121584463412; expires=Thu, 16-Apr-20 16:43:32 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+185 verbose headers   'cf-ray': '57582c698a1bf59d-SEA',
+185 verbose headers   age: '2360',
+185 verbose headers   'cache-control': 'public, max-age=300',
+185 verbose headers   etag: 'W/"d3182c0e5e5ddd628ec3a5b93185eb53"',
+185 verbose headers   'last-modified': 'Sun, 12 Jan 2020 11:32:24 GMT',
+185 verbose headers   vary: 'accept-encoding, accept',
+185 verbose headers   'cf-cache-status': 'HIT',
+185 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+185 verbose headers   server: 'cloudflare',
+185 verbose headers   'content-encoding': 'gzip' }
+186 silly get cb [ 200,
+186 silly get   { date: 'Tue, 17 Mar 2020 16:43:32 GMT',
+186 silly get     'content-type': 'application/json',
+186 silly get     'transfer-encoding': 'chunked',
+186 silly get     connection: 'keep-alive',
+186 silly get     'set-cookie': [ '__cfduid=d8364589f80243b8095e0a96f418d2f121584463412; expires=Thu, 16-Apr-20 16:43:32 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+186 silly get     'cf-ray': '57582c698a1bf59d-SEA',
+186 silly get     age: '2360',
+186 silly get     'cache-control': 'public, max-age=300',
+186 silly get     etag: 'W/"d3182c0e5e5ddd628ec3a5b93185eb53"',
+186 silly get     'last-modified': 'Sun, 12 Jan 2020 11:32:24 GMT',
+186 silly get     vary: 'accept-encoding, accept',
+186 silly get     'cf-cache-status': 'HIT',
+186 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+186 silly get     server: 'cloudflare',
+186 silly get     'content-encoding': 'gzip' } ]
+187 verbose get saving isbinaryfile to /opt/c9/tmp/.npm/registry.npmjs.org/isbinaryfile/.cache.json
+188 verbose correctMkdir /opt/c9/tmp/.npm correctMkdir not in flight; initializing
+189 silly resolveWithNewModule colors@0.6.2 checking installable status
+190 silly cache add args [ 'colors@0.6.x', null ]
+191 verbose cache add spec colors@0.6.x
+192 silly cache add parsed spec Result {
+192 silly cache add   raw: 'colors@0.6.x',
+192 silly cache add   scope: null,
+192 silly cache add   escapedName: 'colors',
+192 silly cache add   name: 'colors',
+192 silly cache add   rawSpec: '0.6.x',
+192 silly cache add   spec: '>=0.6.0 <0.7.0',
+192 silly cache add   type: 'range' }
+193 silly addNamed colors@>=0.6.0 <0.7.0
+194 verbose addNamed ">=0.6.0 <0.7.0" is a valid semver range for colors
+195 silly addNameRange { name: 'colors', range: '>=0.6.0 <0.7.0', hasData: false }
+196 silly mapToRegistry name colors
+197 silly mapToRegistry using default registry
+198 silly mapToRegistry registry https://registry.npmjs.org/
+199 silly mapToRegistry data Result {
+199 silly mapToRegistry   raw: 'colors',
+199 silly mapToRegistry   scope: null,
+199 silly mapToRegistry   escapedName: 'colors',
+199 silly mapToRegistry   name: 'colors',
+199 silly mapToRegistry   rawSpec: '',
+199 silly mapToRegistry   spec: 'latest',
+199 silly mapToRegistry   type: 'tag' }
+200 silly mapToRegistry uri https://registry.npmjs.org/colors
+201 verbose addNameRange registry:https://registry.npmjs.org/colors not in flight; fetching
+202 verbose get https://registry.npmjs.org/colors not expired, no request
+203 silly addNameRange number 2 { name: 'colors', range: '>=0.6.0 <0.7.0', hasData: true }
+204 silly addNameRange versions [ 'colors',
+204 silly addNameRange   [ '0.3.0',
+204 silly addNameRange     '0.5.0',
+204 silly addNameRange     '0.5.1',
+204 silly addNameRange     '0.6.0',
+204 silly addNameRange     '0.6.0-1',
+204 silly addNameRange     '0.6.1',
+204 silly addNameRange     '0.6.2',
+204 silly addNameRange     '1.0.0',
+204 silly addNameRange     '1.0.1',
+204 silly addNameRange     '1.0.2',
+204 silly addNameRange     '1.0.3',
+204 silly addNameRange     '1.1.0',
+204 silly addNameRange     '1.1.1',
+204 silly addNameRange     '1.1.2',
+204 silly addNameRange     '1.2.0-rc0',
+204 silly addNameRange     '1.2.0',
+204 silly addNameRange     '1.2.1',
+204 silly addNameRange     '1.2.2',
+204 silly addNameRange     '1.2.3',
+204 silly addNameRange     '1.2.4',
+204 silly addNameRange     '1.2.5',
+204 silly addNameRange     '1.3.0',
+204 silly addNameRange     '1.3.1',
+204 silly addNameRange     '1.3.2',
+204 silly addNameRange     '1.3.3',
+204 silly addNameRange     '1.4.0' ] ]
+205 silly addNamed colors@0.6.2
+206 verbose addNamed "0.6.2" is a plain semver version for colors
+207 silly resolveWithNewModule isbinaryfile@2.0.4 checking installable status
+208 silly cache add args [ 'isbinaryfile@2.0.x', null ]
+209 verbose cache add spec isbinaryfile@2.0.x
+210 silly cache add parsed spec Result {
+210 silly cache add   raw: 'isbinaryfile@2.0.x',
+210 silly cache add   scope: null,
+210 silly cache add   escapedName: 'isbinaryfile',
+210 silly cache add   name: 'isbinaryfile',
+210 silly cache add   rawSpec: '2.0.x',
+210 silly cache add   spec: '>=2.0.0 <2.1.0',
+210 silly cache add   type: 'range' }
+211 silly addNamed isbinaryfile@>=2.0.0 <2.1.0
+212 verbose addNamed ">=2.0.0 <2.1.0" is a valid semver range for isbinaryfile
+213 silly addNameRange { name: 'isbinaryfile', range: '>=2.0.0 <2.1.0', hasData: false }
+214 silly mapToRegistry name isbinaryfile
+215 silly mapToRegistry using default registry
+216 silly mapToRegistry registry https://registry.npmjs.org/
+217 silly mapToRegistry data Result {
+217 silly mapToRegistry   raw: 'isbinaryfile',
+217 silly mapToRegistry   scope: null,
+217 silly mapToRegistry   escapedName: 'isbinaryfile',
+217 silly mapToRegistry   name: 'isbinaryfile',
+217 silly mapToRegistry   rawSpec: '',
+217 silly mapToRegistry   spec: 'latest',
+217 silly mapToRegistry   type: 'tag' }
+218 silly mapToRegistry uri https://registry.npmjs.org/isbinaryfile
+219 verbose addNameRange registry:https://registry.npmjs.org/isbinaryfile not in flight; fetching
+220 silly mapToRegistry name colors
+221 silly mapToRegistry using default registry
+222 silly mapToRegistry registry https://registry.npmjs.org/
+223 silly mapToRegistry data Result {
+223 silly mapToRegistry   raw: 'colors',
+223 silly mapToRegistry   scope: null,
+223 silly mapToRegistry   escapedName: 'colors',
+223 silly mapToRegistry   name: 'colors',
+223 silly mapToRegistry   rawSpec: '',
+223 silly mapToRegistry   spec: 'latest',
+223 silly mapToRegistry   type: 'tag' }
+224 silly mapToRegistry uri https://registry.npmjs.org/colors
+225 verbose addRemoteTarball https://registry.npmjs.org/colors/-/colors-0.6.2.tgz not in flight; adding
+226 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz',
+226 verbose addRemoteTarball   '2423fe6678ac0c5dae8852e5d0e5be08c997abcc' ]
+227 verbose get https://registry.npmjs.org/isbinaryfile not expired, no request
+228 silly addNameRange number 2 { name: 'isbinaryfile', range: '>=2.0.0 <2.1.0', hasData: true }
+229 silly addNameRange versions [ 'isbinaryfile',
+229 silly addNameRange   [ '0.1.0',
+229 silly addNameRange     '0.1.1',
+229 silly addNameRange     '0.1.2',
+229 silly addNameRange     '0.1.3',
+229 silly addNameRange     '0.1.4',
+229 silly addNameRange     '0.1.5',
+229 silly addNameRange     '0.1.6',
+229 silly addNameRange     '0.1.7',
+229 silly addNameRange     '0.1.8',
+229 silly addNameRange     '0.1.9',
+229 silly addNameRange     '1.0.0',
+229 silly addNameRange     '1.0.1',
+229 silly addNameRange     '2.0.0',
+229 silly addNameRange     '2.0.1',
+229 silly addNameRange     '2.0.2',
+229 silly addNameRange     '2.0.3',
+229 silly addNameRange     '2.0.4',
+229 silly addNameRange     '3.0.0',
+229 silly addNameRange     '3.0.1',
+229 silly addNameRange     '3.0.2',
+229 silly addNameRange     '3.0.3',
+229 silly addNameRange     '4.0.0-rc1',
+229 silly addNameRange     '4.0.0',
+229 silly addNameRange     '4.0.1',
+229 silly addNameRange     '4.0.2',
+229 silly addNameRange     '4.0.3',
+229 silly addNameRange     '4.0.4' ] ]
+230 silly addNamed isbinaryfile@2.0.4
+231 verbose addNamed "2.0.4" is a plain semver version for isbinaryfile
+232 silly mapToRegistry name isbinaryfile
+233 silly mapToRegistry using default registry
+234 silly mapToRegistry registry https://registry.npmjs.org/
+235 silly mapToRegistry data Result {
+235 silly mapToRegistry   raw: 'isbinaryfile',
+235 silly mapToRegistry   scope: null,
+235 silly mapToRegistry   escapedName: 'isbinaryfile',
+235 silly mapToRegistry   name: 'isbinaryfile',
+235 silly mapToRegistry   rawSpec: '',
+235 silly mapToRegistry   spec: 'latest',
+235 silly mapToRegistry   type: 'tag' }
+236 silly mapToRegistry uri https://registry.npmjs.org/isbinaryfile
+237 verbose addRemoteTarball https://registry.npmjs.org/isbinaryfile/-/isbinaryfile-2.0.4.tgz not in flight; adding
+238 verbose addRemoteTarball [ 'https://registry.npmjs.org/isbinaryfile/-/isbinaryfile-2.0.4.tgz',
+238 verbose addRemoteTarball   'd23592e6a6f093efb84c2e6152056be294e414a1' ]
+239 info retry fetch attempt 1 at 4:43:32 PM
+240 info attempt registry request try #1 at 4:43:32 PM
+241 http fetch GET https://registry.npmjs.org/colors/-/colors-0.6.2.tgz
+242 info retry fetch attempt 1 at 4:43:32 PM
+243 info attempt registry request try #1 at 4:43:32 PM
+244 http fetch GET https://registry.npmjs.org/isbinaryfile/-/isbinaryfile-2.0.4.tgz
+245 http fetch 200 https://registry.npmjs.org/isbinaryfile/-/isbinaryfile-2.0.4.tgz
+246 silly fetchAndShaCheck shasum d23592e6a6f093efb84c2e6152056be294e414a1
+247 http fetch 200 https://registry.npmjs.org/colors/-/colors-0.6.2.tgz
+248 verbose addTmpTarball /tmp/npm-224-49688253/registry.npmjs.org/isbinaryfile/-/isbinaryfile-2.0.4.tgz not in flight; adding
+249 verbose addTmpTarball already have metadata; skipping unpack for isbinaryfile@2.0.4
+250 verbose correctMkdir /opt/c9/tmp/.npm correctMkdir not in flight; initializing
+251 silly fetchAndShaCheck shasum 2423fe6678ac0c5dae8852e5d0e5be08c997abcc
+252 verbose addTmpTarball /tmp/npm-224-49688253/registry.npmjs.org/colors/-/colors-0.6.2.tgz not in flight; adding
+253 verbose addTmpTarball already have metadata; skipping unpack for colors@0.6.2
+254 verbose correctMkdir /opt/c9/tmp/.npm correctMkdir not in flight; initializing
+255 silly cache afterAdd colors@0.6.2
+256 verbose afterAdd /opt/c9/tmp/.npm/colors/0.6.2/package/package.json not in flight; writing
+257 verbose correctMkdir /opt/c9/tmp/.npm correctMkdir not in flight; initializing
+258 silly cache afterAdd isbinaryfile@2.0.4
+259 verbose afterAdd /opt/c9/tmp/.npm/isbinaryfile/2.0.4/package/package.json not in flight; writing
+260 verbose correctMkdir /opt/c9/tmp/.npm correctMkdir not in flight; initializing
+261 verbose afterAdd /opt/c9/tmp/.npm/colors/0.6.2/package/package.json written
+262 verbose afterAdd /opt/c9/tmp/.npm/isbinaryfile/2.0.4/package/package.json written
+263 silly loadAllDepsIntoIdealTree Finishing
+264 silly loadIdealTree Finishing
+265 silly currentTree .c9
+265 silly currentTree ├── ansi-regex@2.1.1
+265 silly currentTree ├── aproba@1.2.0
+265 silly currentTree ├── are-we-there-yet@1.1.5
+265 silly currentTree ├── bl@1.2.2
+265 silly currentTree ├── buffer-alloc-unsafe@1.1.0
+265 silly currentTree ├── buffer-alloc@1.2.0
+265 silly currentTree ├── buffer-fill@1.0.0
+265 silly currentTree ├── chownr@1.1.3
+265 silly currentTree ├── code-point-at@1.1.0
+265 silly currentTree ├── colors@0.6.2
+265 silly currentTree ├── commander@2.0.0
+265 silly currentTree ├── console-control-strings@1.1.0
+265 silly currentTree ├── core-util-is@1.0.2
+265 silly currentTree ├── decompress-response@3.3.0
+265 silly currentTree ├── deep-extend@0.6.0
+265 silly currentTree ├── delegates@1.0.0
+265 silly currentTree ├── detect-libc@1.0.3
+265 silly currentTree ├── dottie@0.0.8-0
+265 silly currentTree ├── end-of-stream@1.4.4
+265 silly currentTree ├── expand-template@1.1.1
+265 silly currentTree ├── fs-constants@1.0.0
+265 silly currentTree ├── gauge@2.7.4
+265 silly currentTree ├── generic-pool@2.0.4
+265 silly currentTree ├── github-from-package@0.0.0
+265 silly currentTree ├── has-unicode@2.0.1
+265 silly currentTree ├── inherits@2.0.4
+265 silly currentTree ├── ini@1.3.5
+265 silly currentTree ├── is-fullwidth-code-point@1.0.0
+265 silly currentTree ├── isarray@1.0.0
+265 silly currentTree ├── isbinaryfile@2.0.4
+265 silly currentTree ├── lingo@0.0.5
+265 silly currentTree ├── lodash@1.3.1
+265 silly currentTree ├── mimic-response@1.0.1
+265 silly currentTree ├── minimist@1.2.0
+265 silly currentTree ├─┬ mkdirp@0.5.1
+265 silly currentTree │ └── minimist@0.0.8
+265 silly currentTree ├── moment@2.1.0
+265 silly currentTree ├── nak@0.3.3
+265 silly currentTree ├── nan@2.14.0
+265 silly currentTree ├── node-abi@2.13.0
+265 silly currentTree ├── node-pty-prebuilt@0.7.3
+265 silly currentTree ├── noop-logger@0.1.1
+265 silly currentTree ├── npmlog@4.1.2
+265 silly currentTree ├── number-is-nan@1.0.1
+265 silly currentTree ├── object-assign@4.1.1
+265 silly currentTree ├── once@1.4.0
+265 silly currentTree ├── os-homedir@1.0.2
+265 silly currentTree ├── prebuild-install@2.5.3
+265 silly currentTree ├── process-nextick-args@2.0.1
+265 silly currentTree ├── promise@3.2.0
+265 silly currentTree ├── pump@2.0.1
+265 silly currentTree ├── rc@1.2.8
+265 silly currentTree ├── readable-stream@2.3.7
+265 silly currentTree ├── safe-buffer@5.1.2
+265 silly currentTree ├── semver@5.7.1
+265 silly currentTree ├── sequelize@2.0.0-beta.0
+265 silly currentTree ├── set-blocking@2.0.0
+265 silly currentTree ├── signal-exit@3.0.2
+265 silly currentTree ├── simple-concat@1.0.0
+265 silly currentTree ├── simple-get@2.8.1
+265 silly currentTree ├── sliced@0.0.5
+265 silly currentTree ├── sql@0.26.0
+265 silly currentTree ├─┬ sqlite3@3.1.4
+265 silly currentTree │ ├── abbrev@1.0.7
+265 silly currentTree │ ├── ansi-regex@2.0.0
+265 silly currentTree │ ├── ansi-styles@2.2.1
+265 silly currentTree │ ├── ansi@0.3.1
+265 silly currentTree │ ├── are-we-there-yet@1.1.2
+265 silly currentTree │ ├── asn1@0.2.3
+265 silly currentTree │ ├── assert-plus@0.2.0
+265 silly currentTree │ ├── async@1.5.2
+265 silly currentTree │ ├── aws-sign2@0.6.0
+265 silly currentTree │ ├── aws4@1.4.1
+265 silly currentTree │ ├── balanced-match@0.4.1
+265 silly currentTree │ ├─┬ bl@1.1.2
+265 silly currentTree │ │ └── readable-stream@2.0.6
+265 silly currentTree │ ├── block-stream@0.0.9
+265 silly currentTree │ ├── boom@2.10.1
+265 silly currentTree │ ├── brace-expansion@1.1.4
+265 silly currentTree │ ├── caseless@0.11.0
+265 silly currentTree │ ├── chalk@1.1.3
+265 silly currentTree │ ├── combined-stream@1.0.5
+265 silly currentTree │ ├── commander@2.9.0
+265 silly currentTree │ ├── concat-map@0.0.1
+265 silly currentTree │ ├── core-util-is@1.0.2
+265 silly currentTree │ ├── cryptiles@2.0.5
+265 silly currentTree │ ├─┬ dashdash@1.13.1
+265 silly currentTree │ │ └── assert-plus@1.0.0
+265 silly currentTree │ ├── debug@2.2.0
+265 silly currentTree │ ├── deep-extend@0.4.1
+265 silly currentTree │ ├── delayed-stream@1.0.0
+265 silly currentTree │ ├── delegates@1.0.0
+265 silly currentTree │ ├── ecc-jsbn@0.1.1
+265 silly currentTree │ ├── escape-string-regexp@1.0.5
+265 silly currentTree │ ├── extend@3.0.0
+265 silly currentTree │ ├── extsprintf@1.0.2
+265 silly currentTree │ ├── forever-agent@0.6.1
+265 silly currentTree │ ├── form-data@1.0.0-rc4
+265 silly currentTree │ ├── fstream-ignore@1.0.4
+265 silly currentTree │ ├── fstream@1.0.9
+265 silly currentTree │ ├── gauge@1.2.7
+265 silly currentTree │ ├── generate-function@2.0.0
+265 silly currentTree │ ├── generate-object-property@1.2.0
+265 silly currentTree │ ├─┬ getpass@0.1.6
+265 silly currentTree │ │ └── assert-plus@1.0.0
+265 silly currentTree │ ├── glob@7.0.3
+265 silly currentTree │ ├── graceful-fs@4.1.4
+265 silly currentTree │ ├── graceful-readlink@1.0.1
+265 silly currentTree │ ├── har-validator@2.0.6
+265 silly currentTree │ ├── has-ansi@2.0.0
+265 silly currentTree │ ├── has-unicode@2.0.0
+265 silly currentTree │ ├── hawk@3.1.3
+265 silly currentTree │ ├── hoek@2.16.3
+265 silly currentTree │ ├── http-signature@1.1.1
+265 silly currentTree │ ├── inflight@1.0.4
+265 silly currentTree │ ├── inherits@2.0.1
+265 silly currentTree │ ├── ini@1.3.4
+265 silly currentTree │ ├── is-my-json-valid@2.13.1
+265 silly currentTree │ ├── is-property@1.0.2
+265 silly currentTree │ ├── is-typedarray@1.0.0
+265 silly currentTree │ ├── isarray@1.0.0
+265 silly currentTree │ ├── isstream@0.1.2
+265 silly currentTree │ ├── jodid25519@1.0.2
+265 silly currentTree │ ├── jsbn@0.1.0
+265 silly currentTree │ ├── json-schema@0.2.2
+265 silly currentTree │ ├── json-stringify-safe@5.0.1
+265 silly currentTree │ ├── jsonpointer@2.0.0
+265 silly currentTree │ ├── jsprim@1.2.2
+265 silly currentTree │ ├── lodash._baseslice@4.0.0
+265 silly currentTree │ ├── lodash._basetostring@4.12.0
+265 silly currentTree │ ├── lodash.pad@4.4.0
+265 silly currentTree │ ├── lodash.padend@4.5.0
+265 silly currentTree │ ├── lodash.padstart@4.5.0
+265 silly currentTree │ ├── lodash.tostring@4.1.3
+265 silly currentTree │ ├── mime-db@1.23.0
+265 silly currentTree │ ├── mime-types@2.1.11
+265 silly currentTree │ ├── minimatch@3.0.0
+265 silly currentTree │ ├── minimist@0.0.8
+265 silly currentTree │ ├── mkdirp@0.5.1
+265 silly currentTree │ ├── ms@0.7.1
+265 silly currentTree │ ├── nan@2.3.5
+265 silly currentTree │ ├── node-pre-gyp@0.6.28
+265 silly currentTree │ ├── node-uuid@1.4.7
+265 silly currentTree │ ├── nopt@3.0.6
+265 silly currentTree │ ├── npmlog@2.0.3
+265 silly currentTree │ ├── oauth-sign@0.8.2
+265 silly currentTree │ ├── once@1.3.3
+265 silly currentTree │ ├── path-is-absolute@1.0.0
+265 silly currentTree │ ├── pinkie-promise@2.0.1
+265 silly currentTree │ ├── pinkie@2.0.4
+265 silly currentTree │ ├── process-nextick-args@1.0.7
+265 silly currentTree │ ├── qs@6.1.0
+265 silly currentTree │ ├─┬ rc@1.1.6
+265 silly currentTree │ │ └── minimist@1.2.0
+265 silly currentTree │ ├── readable-stream@2.1.2
+265 silly currentTree │ ├── request@2.72.0
+265 silly currentTree │ ├── rimraf@2.5.2
+265 silly currentTree │ ├── semver@5.1.0
+265 silly currentTree │ ├── sntp@1.0.9
+265 silly currentTree │ ├─┬ sshpk@1.8.3
+265 silly currentTree │ │ └── assert-plus@1.0.0
+265 silly currentTree │ ├── string_decoder@0.10.31
+265 silly currentTree │ ├── stringstream@0.0.5
+265 silly currentTree │ ├── strip-ansi@3.0.1
+265 silly currentTree │ ├── strip-json-comments@1.0.4
+265 silly currentTree │ ├── supports-color@2.0.0
+265 silly currentTree │ ├─┬ tar-pack@3.1.3
+265 silly currentTree │ │ └── readable-stream@2.0.6
+265 silly currentTree │ ├── tar@2.2.1
+265 silly currentTree │ ├── tough-cookie@2.2.2
+265 silly currentTree │ ├── tunnel-agent@0.4.3
+265 silly currentTree │ ├── tweetnacl@0.13.3
+265 silly currentTree │ ├── uid-number@0.0.6
+265 silly currentTree │ ├── util-deprecate@1.0.2
+265 silly currentTree │ ├── verror@1.3.6
+265 silly currentTree │ ├── wrappy@1.0.1
+265 silly currentTree │ └── xtend@4.0.1
+265 silly currentTree ├── string_decoder@1.1.1
+265 silly currentTree ├── string-width@1.0.2
+265 silly currentTree ├── strip-ansi@3.0.1
+265 silly currentTree ├── strip-json-comments@2.0.1
+265 silly currentTree ├─┬ tar-fs@1.16.3
+265 silly currentTree │ └── pump@1.0.3
+265 silly currentTree ├── tar-stream@1.6.2
+265 silly currentTree ├── to-buffer@1.1.1
+265 silly currentTree ├── toposort-class@0.2.1
+265 silly currentTree ├── tunnel-agent@0.6.0
+265 silly currentTree ├── underscore.string@2.3.3
+265 silly currentTree ├── util-deprecate@1.0.2
+265 silly currentTree ├── validator@1.5.1
+265 silly currentTree ├── which-pm-runs@1.0.0
+265 silly currentTree ├── wide-align@1.1.3
+265 silly currentTree ├── wrappy@1.0.2
+265 silly currentTree └── xtend@4.0.2
+266 silly idealTree .c9
+266 silly idealTree ├── ansi-regex@2.1.1
+266 silly idealTree ├── aproba@1.2.0
+266 silly idealTree ├── are-we-there-yet@1.1.5
+266 silly idealTree ├── bl@1.2.2
+266 silly idealTree ├── buffer-alloc-unsafe@1.1.0
+266 silly idealTree ├── buffer-alloc@1.2.0
+266 silly idealTree ├── buffer-fill@1.0.0
+266 silly idealTree ├── chownr@1.1.3
+266 silly idealTree ├── code-point-at@1.1.0
+266 silly idealTree ├── colors@0.6.2
+266 silly idealTree ├── commander@2.0.0
+266 silly idealTree ├── console-control-strings@1.1.0
+266 silly idealTree ├── core-util-is@1.0.2
+266 silly idealTree ├── decompress-response@3.3.0
+266 silly idealTree ├── deep-extend@0.6.0
+266 silly idealTree ├── delegates@1.0.0
+266 silly idealTree ├── detect-libc@1.0.3
+266 silly idealTree ├── dottie@0.0.8-0
+266 silly idealTree ├── end-of-stream@1.4.4
+266 silly idealTree ├── expand-template@1.1.1
+266 silly idealTree ├── fs-constants@1.0.0
+266 silly idealTree ├── gauge@2.7.4
+266 silly idealTree ├── generic-pool@2.0.4
+266 silly idealTree ├── github-from-package@0.0.0
+266 silly idealTree ├── has-unicode@2.0.1
+266 silly idealTree ├── inherits@2.0.4
+266 silly idealTree ├── ini@1.3.5
+266 silly idealTree ├── is-fullwidth-code-point@1.0.0
+266 silly idealTree ├── isarray@1.0.0
+266 silly idealTree ├── isbinaryfile@2.0.4
+266 silly idealTree ├── lingo@0.0.5
+266 silly idealTree ├── lodash@1.3.1
+266 silly idealTree ├── mimic-response@1.0.1
+266 silly idealTree ├── minimist@1.2.0
+266 silly idealTree ├─┬ mkdirp@0.5.1
+266 silly idealTree │ └── minimist@0.0.8
+266 silly idealTree ├── moment@2.1.0
+266 silly idealTree ├── nak@0.3.3
+266 silly idealTree ├── nan@2.14.0
+266 silly idealTree ├── node-abi@2.13.0
+266 silly idealTree ├── node-pty-prebuilt@0.7.3
+266 silly idealTree ├── noop-logger@0.1.1
+266 silly idealTree ├── npmlog@4.1.2
+266 silly idealTree ├── number-is-nan@1.0.1
+266 silly idealTree ├── object-assign@4.1.1
+266 silly idealTree ├── once@1.4.0
+266 silly idealTree ├── os-homedir@1.0.2
+266 silly idealTree ├── prebuild-install@2.5.3
+266 silly idealTree ├── process-nextick-args@2.0.1
+266 silly idealTree ├── promise@3.2.0
+266 silly idealTree ├── pump@2.0.1
+266 silly idealTree ├── rc@1.2.8
+266 silly idealTree ├── readable-stream@2.3.7
+266 silly idealTree ├── safe-buffer@5.1.2
+266 silly idealTree ├── semver@5.7.1
+266 silly idealTree ├── sequelize@2.0.0-beta.0
+266 silly idealTree ├── set-blocking@2.0.0
+266 silly idealTree ├── signal-exit@3.0.2
+266 silly idealTree ├── simple-concat@1.0.0
+266 silly idealTree ├── simple-get@2.8.1
+266 silly idealTree ├── sliced@0.0.5
+266 silly idealTree ├── sql@0.26.0
+266 silly idealTree ├─┬ sqlite3@3.1.4
+266 silly idealTree │ ├── abbrev@1.0.7
+266 silly idealTree │ ├── ansi-regex@2.0.0
+266 silly idealTree │ ├── ansi-styles@2.2.1
+266 silly idealTree │ ├── ansi@0.3.1
+266 silly idealTree │ ├── are-we-there-yet@1.1.2
+266 silly idealTree │ ├── asn1@0.2.3
+266 silly idealTree │ ├── assert-plus@0.2.0
+266 silly idealTree │ ├── async@1.5.2
+266 silly idealTree │ ├── aws-sign2@0.6.0
+266 silly idealTree │ ├── aws4@1.4.1
+266 silly idealTree │ ├── balanced-match@0.4.1
+266 silly idealTree │ ├─┬ bl@1.1.2
+266 silly idealTree │ │ └── readable-stream@2.0.6
+266 silly idealTree │ ├── block-stream@0.0.9
+266 silly idealTree │ ├── boom@2.10.1
+266 silly idealTree │ ├── brace-expansion@1.1.4
+266 silly idealTree │ ├── caseless@0.11.0
+266 silly idealTree │ ├── chalk@1.1.3
+266 silly idealTree │ ├── combined-stream@1.0.5
+266 silly idealTree │ ├── commander@2.9.0
+266 silly idealTree │ ├── concat-map@0.0.1
+266 silly idealTree │ ├── core-util-is@1.0.2
+266 silly idealTree │ ├── cryptiles@2.0.5
+266 silly idealTree │ ├─┬ dashdash@1.13.1
+266 silly idealTree │ │ └── assert-plus@1.0.0
+266 silly idealTree │ ├── debug@2.2.0
+266 silly idealTree │ ├── deep-extend@0.4.1
+266 silly idealTree │ ├── delayed-stream@1.0.0
+266 silly idealTree │ ├── delegates@1.0.0
+266 silly idealTree │ ├── ecc-jsbn@0.1.1
+266 silly idealTree │ ├── escape-string-regexp@1.0.5
+266 silly idealTree │ ├── extend@3.0.0
+266 silly idealTree │ ├── extsprintf@1.0.2
+266 silly idealTree │ ├── forever-agent@0.6.1
+266 silly idealTree │ ├── form-data@1.0.0-rc4
+266 silly idealTree │ ├── fstream-ignore@1.0.4
+266 silly idealTree │ ├── fstream@1.0.9
+266 silly idealTree │ ├── gauge@1.2.7
+266 silly idealTree │ ├── generate-function@2.0.0
+266 silly idealTree │ ├── generate-object-property@1.2.0
+266 silly idealTree │ ├─┬ getpass@0.1.6
+266 silly idealTree │ │ └── assert-plus@1.0.0
+266 silly idealTree │ ├── glob@7.0.3
+266 silly idealTree │ ├── graceful-fs@4.1.4
+266 silly idealTree │ ├── graceful-readlink@1.0.1
+266 silly idealTree │ ├── har-validator@2.0.6
+266 silly idealTree │ ├── has-ansi@2.0.0
+266 silly idealTree │ ├── has-unicode@2.0.0
+266 silly idealTree │ ├── hawk@3.1.3
+266 silly idealTree │ ├── hoek@2.16.3
+266 silly idealTree │ ├── http-signature@1.1.1
+266 silly idealTree │ ├── inflight@1.0.4
+266 silly idealTree │ ├── inherits@2.0.1
+266 silly idealTree │ ├── ini@1.3.4
+266 silly idealTree │ ├── is-my-json-valid@2.13.1
+266 silly idealTree │ ├── is-property@1.0.2
+266 silly idealTree │ ├── is-typedarray@1.0.0
+266 silly idealTree │ ├── isarray@1.0.0
+266 silly idealTree │ ├── isstream@0.1.2
+266 silly idealTree │ ├── jodid25519@1.0.2
+266 silly idealTree │ ├── jsbn@0.1.0
+266 silly idealTree │ ├── json-schema@0.2.2
+266 silly idealTree │ ├── json-stringify-safe@5.0.1
+266 silly idealTree │ ├── jsonpointer@2.0.0
+266 silly idealTree │ ├── jsprim@1.2.2
+266 silly idealTree │ ├── lodash._baseslice@4.0.0
+266 silly idealTree │ ├── lodash._basetostring@4.12.0
+266 silly idealTree │ ├── lodash.pad@4.4.0
+266 silly idealTree │ ├── lodash.padend@4.5.0
+266 silly idealTree │ ├── lodash.padstart@4.5.0
+266 silly idealTree │ ├── lodash.tostring@4.1.3
+266 silly idealTree │ ├── mime-db@1.23.0
+266 silly idealTree │ ├── mime-types@2.1.11
+266 silly idealTree │ ├── minimatch@3.0.0
+266 silly idealTree │ ├── minimist@0.0.8
+266 silly idealTree │ ├── mkdirp@0.5.1
+266 silly idealTree │ ├── ms@0.7.1
+266 silly idealTree │ ├── nan@2.3.5
+266 silly idealTree │ ├── node-pre-gyp@0.6.28
+266 silly idealTree │ ├── node-uuid@1.4.7
+266 silly idealTree │ ├── nopt@3.0.6
+266 silly idealTree │ ├── npmlog@2.0.3
+266 silly idealTree │ ├── oauth-sign@0.8.2
+266 silly idealTree │ ├── once@1.3.3
+266 silly idealTree │ ├── path-is-absolute@1.0.0
+266 silly idealTree │ ├── pinkie-promise@2.0.1
+266 silly idealTree │ ├── pinkie@2.0.4
+266 silly idealTree │ ├── process-nextick-args@1.0.7
+266 silly idealTree │ ├── qs@6.1.0
+266 silly idealTree │ ├─┬ rc@1.1.6
+266 silly idealTree │ │ └── minimist@1.2.0
+266 silly idealTree │ ├── readable-stream@2.1.2
+266 silly idealTree │ ├── request@2.72.0
+266 silly idealTree │ ├── rimraf@2.5.2
+266 silly idealTree │ ├── semver@5.1.0
+266 silly idealTree │ ├── sntp@1.0.9
+266 silly idealTree │ ├─┬ sshpk@1.8.3
+266 silly idealTree │ │ └── assert-plus@1.0.0
+266 silly idealTree │ ├── string_decoder@0.10.31
+266 silly idealTree │ ├── stringstream@0.0.5
+266 silly idealTree │ ├── strip-ansi@3.0.1
+266 silly idealTree │ ├── strip-json-comments@1.0.4
+266 silly idealTree │ ├── supports-color@2.0.0
+266 silly idealTree │ ├─┬ tar-pack@3.1.3
+266 silly idealTree │ │ └── readable-stream@2.0.6
+266 silly idealTree │ ├── tar@2.2.1
+266 silly idealTree │ ├── tough-cookie@2.2.2
+266 silly idealTree │ ├── tunnel-agent@0.4.3
+266 silly idealTree │ ├── tweetnacl@0.13.3
+266 silly idealTree │ ├── uid-number@0.0.6
+266 silly idealTree │ ├── util-deprecate@1.0.2
+266 silly idealTree │ ├── verror@1.3.6
+266 silly idealTree │ ├── wrappy@1.0.1
+266 silly idealTree │ └── xtend@4.0.1
+266 silly idealTree ├── string_decoder@1.1.1
+266 silly idealTree ├── string-width@1.0.2
+266 silly idealTree ├── strip-ansi@3.0.1
+266 silly idealTree ├── strip-json-comments@2.0.1
+266 silly idealTree ├─┬ tar-fs@1.16.3
+266 silly idealTree │ └── pump@1.0.3
+266 silly idealTree ├── tar-stream@1.6.2
+266 silly idealTree ├── to-buffer@1.1.1
+266 silly idealTree ├── toposort-class@0.2.1
+266 silly idealTree ├── tunnel-agent@0.6.0
+266 silly idealTree ├── underscore.string@2.3.3
+266 silly idealTree ├── util-deprecate@1.0.2
+266 silly idealTree ├── validator@1.5.1
+266 silly idealTree ├── which-pm-runs@1.0.0
+266 silly idealTree ├── wide-align@1.1.3
+266 silly idealTree ├── wrappy@1.0.2
+266 silly idealTree └── xtend@4.0.2
+267 silly generateActionsToTake Starting
+268 silly install generateActionsToTake
+269 silly generateActionsToTake Finishing
+270 silly diffTrees action count 1
+271 silly diffTrees update nak@0.3.3
+272 silly decomposeActions action count 8
+273 silly decomposeActions fetch nak@0.3.3
+274 silly decomposeActions extract nak@0.3.3
+275 silly decomposeActions test nak@0.3.3
+276 silly decomposeActions preinstall nak@0.3.3
+277 silly decomposeActions build nak@0.3.3
+278 silly decomposeActions install nak@0.3.3
+279 silly decomposeActions postinstall nak@0.3.3
+280 silly decomposeActions finalize nak@0.3.3
+281 silly executeActions Starting
+282 silly install executeActions
+283 silly doSerial global-install 0
+284 silly doParallel fetch 1
+285 verbose correctMkdir /opt/c9/tmp/.npm/_locks correctMkdir not in flight; initializing
+286 verbose makeDirectory /opt/c9/tmp/.npm/_locks creation not in flight; initializing
+287 silly makeDirectory /opt/c9/tmp/.npm/_locks uid: 1000 gid: 1000
+288 verbose lock using /opt/c9/tmp/.npm/_locks/staging-210a4cea1899c945.lock for /home/ubuntu/.c9/node_modules/.staging
+289 silly doParallel extract 1
+290 silly extract nak@0.3.3
+291 verbose unbuild node_modules/.staging/nak-62e3f039
+292 silly gentlyRm /home/ubuntu/.c9/node_modules/.staging/nak-62e3f039 is being purged from base /home/ubuntu/.c9
+293 verbose gentlyRm don't care about contents; nuking /home/ubuntu/.c9/node_modules/.staging/nak-62e3f039
+294 verbose tar unpack /opt/c9/tmp/.npm/nak/0.3.3/package.tgz
+295 verbose tar unpacking to /home/ubuntu/.c9/node_modules/.staging/nak-62e3f039
+296 silly gentlyRm /home/ubuntu/.c9/node_modules/.staging/nak-62e3f039 is being purged
+297 verbose gentlyRm don't care about contents; nuking /home/ubuntu/.c9/node_modules/.staging/nak-62e3f039
+298 silly gunzTarPerm modes [ '775', '664' ]
+299 silly gunzTarPerm extractEntry
+300 silly gunzTarPerm extractEntry .gitignore
+301 silly gunzTarPerm extractEntry .nakignore
+302 silly gunzTarPerm extractEntry .travis.yml
+303 silly gunzTarPerm extractEntry LICENSE.txt
+304 silly gunzTarPerm extractEntry README.md
+305 silly gunzTarPerm extractEntry benchmark/
+306 silly gunzTarPerm extractEntry benchmark/benchmark.js
+307 silly gunzTarPerm extractEntry bin/
+308 silly gunzTarPerm extractEntry bin/nak
+309 silly gunzTarPerm extractEntry compile.js
+310 silly gunzTarPerm extractEntry lib/
+311 silly gunzTarPerm extractEntry lib/finalizer.js
+312 silly gunzTarPerm extractEntry lib/mergesort.js
+313 silly gunzTarPerm extractEntry lib/nak.js
+314 silly gunzTarPerm extractEntry lib/options.js
+315 silly gunzTarPerm extractEntry lib/path-filter.js
+316 silly gunzTarPerm extractEntry lib/walkdir.js
+317 silly gunzTarPerm extractEntry package.json
+318 silly gunzTarPerm extractEntry script/
+319 silly gunzTarPerm extractEntry script/profiler
+320 silly gunzTarPerm extractEntry tests/
+321 silly gunzTarPerm extractEntry tests/.nakignore
+322 silly gunzTarPerm extractEntry tests/filelist_fixtures/
+323 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/
+324 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/a.txt
+325 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/b.txt
+326 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/p.txt
+327 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/subdir/
+328 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/subdir/.realhidden
+329 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/subdir/1.txt
+330 silly gunzTarPerm extractEntry tests/filelist_fixtures/.root/subdir/foo.js
+331 silly gunzTarPerm extractEntry tests/filelist_fixtures/1.txt
+332 silly gunzTarPerm extractEntry tests/filelist_fixtures/foo.js
+333 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/
+334 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/Toasty.gif
+335 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/
+336 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/.hidden
+337 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/.level3a/
+338 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/.level3a/.hidden
+339 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/.level3a/nothere.txt
+340 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/level2.rb
+341 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/level3/
+342 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/level3/level4/
+343 silly gunzTarPerm extractEntry tests/filelist_fixtures/level1/level2/level3/level4/level4.txt
+344 silly gunzTarPerm extractEntry tests/filelist_fixtures/symlink-to-1.txt
+345 silly gunzTarPerm modified mode [ 'tests/filelist_fixtures/symlink-to-1.txt', 511, 509 ]
+346 silly gunzTarPerm extractEntry tests/filelist_fixtures/symlink-to-nowhere.txt
+347 silly gunzTarPerm modified mode [ 'tests/filelist_fixtures/symlink-to-nowhere.txt', 511, 509 ]
+348 silly gunzTarPerm extractEntry tests/filelist_test.js
+349 silly gunzTarPerm extractEntry tests/replace_fixtures/
+350 silly gunzTarPerm extractEntry tests/replace_fixtures/source/
+351 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file1.txt
+352 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file2.txt
+353 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file3.txt
+354 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file4.txt
+355 silly gunzTarPerm extractEntry tests/replace_fixtures/source/search_file5.txt
+356 silly gunzTarPerm extractEntry tests/replace_test.js
+357 silly gunzTarPerm extractEntry tests/search_fixtures/
+358 silly gunzTarPerm extractEntry tests/search_fixtures/.file8_hidden.js
+359 silly gunzTarPerm extractEntry tests/search_fixtures/.gitignore
+360 silly gunzTarPerm extractEntry tests/search_fixtures/.nakignore
+361 silly gunzTarPerm extractEntry tests/search_fixtures/.root/
+362 silly gunzTarPerm extractEntry tests/search_fixtures/.root/file3.txt
+363 silly gunzTarPerm extractEntry tests/search_fixtures/.root/subdir/
+364 silly gunzTarPerm extractEntry tests/search_fixtures/.root/subdir/.realhidden
+365 silly gunzTarPerm extractEntry tests/search_fixtures/.root/subdir/file1.txt
+366 silly gunzTarPerm extractEntry tests/search_fixtures/dir/
+367 silly gunzTarPerm extractEntry tests/search_fixtures/dir/file7_ignorable.rb
+368 silly gunzTarPerm extractEntry tests/search_fixtures/file1.txt
+369 silly gunzTarPerm extractEntry tests/search_fixtures/file2.txt
+370 silly gunzTarPerm extractEntry tests/search_fixtures/file3.txt
+371 silly gunzTarPerm extractEntry tests/search_fixtures/file4_noext
+372 silly gunzTarPerm extractEntry tests/search_fixtures/file5_not_really_image.gif
+373 silly gunzTarPerm extractEntry tests/search_fixtures/file6_contains_nonascii.dat
+374 silly gunzTarPerm extractEntry tests/search_fixtures/file9_ignored_by_this_dir.txt
+375 silly gunzTarPerm extractEntry tests/search_fixtures/newdir/
+376 silly gunzTarPerm extractEntry tests/search_fixtures/newdir/deep_dir.js
+377 silly gunzTarPerm extractEntry tests/search_fixtures/symlink-to-file1.txt
+378 silly gunzTarPerm modified mode [ 'tests/search_fixtures/symlink-to-file1.txt', 511, 509 ]
+379 silly gunzTarPerm extractEntry tests/search_fixtures/thai.txt
+380 silly gunzTarPerm extractEntry tests/search_test.js
+381 silly gunzTarPerm extractEntry tests/sorting_fixtures/
+382 silly gunzTarPerm extractEntry tests/sorting_fixtures/README.md
+383 silly gunzTarPerm extractEntry tests/sorting_fixtures/a.txt
+384 silly gunzTarPerm extractEntry tests/sorting_fixtures/b.txt
+385 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/
+386 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/BBB.txt
+387 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/ZZZ.txt
+388 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/www/
+389 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/www/a.txt
+390 silly gunzTarPerm extractEntry tests/sorting_fixtures/n_folder/z.txt
+391 silly gunzTarPerm extractEntry tests/sorting_fixtures/p.txt
+392 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/
+393 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/a.txt
+394 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/b_folder/
+395 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/b_folder/l.txt
+396 silly gunzTarPerm extractEntry tests/sorting_fixtures/p_folder/c.txt
+397 silly gunzTarPerm extractEntry tests/sorting_fixtures/t.json
+398 silly gunzTarPerm extractEntry tests/sorting_fixtures/æ.txt
+399 silly gunzTarPerm extractEntry tests/sorting_test.js
+400 silly gunzTarPerm extractEntry tests/test_helpers.js
+401 silly gunzTarPerm extractEntry tests/test_runner.js
+402 warn excluding symbolic link tests/filelist_fixtures/symlink-to-1.txt -> 1.txt
+403 warn excluding symbolic link tests/filelist_fixtures/symlink-to-nowhere.txt -> nowhere.txt
+404 warn excluding symbolic link tests/search_fixtures/symlink-to-file1.txt -> file1.txt
+405 silly gentlyRm /home/ubuntu/.c9/node_modules/.staging/nak-62e3f039/node_modules is being purged
+406 verbose gentlyRm don't care about contents; nuking /home/ubuntu/.c9/node_modules/.staging/nak-62e3f039/node_modules
+407 silly doParallel preinstall 1
+408 silly preinstall nak@0.3.3 /home/ubuntu/.c9/node_modules/.staging/nak-62e3f039
+409 info lifecycle nak@0.3.3~preinstall: nak@0.3.3
+410 silly lifecycle nak@0.3.3~preinstall: no script for preinstall, continuing
+411 silly doReverseSerial remove 0
+412 silly doSerial move 0
+413 silly doSerial finalize 1
+414 silly finalize /home/ubuntu/.c9/node_modules/nak
+415 verbose unlock done using /opt/c9/tmp/.npm/_locks/staging-210a4cea1899c945.lock for /home/ubuntu/.c9/node_modules/.staging
+416 silly rollbackFailedOptional Starting
+417 silly rollbackFailedOptional Finishing
+418 silly runTopLevelLifecycles Starting
+419 silly runTopLevelLifecycles Finishing
+420 silly install printInstalled
+421 warn enoent ENOENT: no such file or directory, open '/home/ubuntu/.c9/package.json'
+422 warn .c9 No description
+423 warn .c9 No repository field.
+424 warn .c9 No README data
+425 warn .c9 No license field.
+426 verbose stack Error: EXDEV: cross-device link not permitted, rename '/home/ubuntu/.c9/node_modules/nak' -> '/home/ubuntu/.c9/node_modules/.nak.DELETE'
+426 verbose stack     at moveAway (/opt/c9/node/lib/node_modules/npm/lib/install/action/finalize.js:38:5)
+426 verbose stack     at destStatted (/opt/c9/node/lib/node_modules/npm/lib/install/action/finalize.js:27:7)
+426 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+426 verbose stack
+426 verbose stack Error: EXDEV: cross-device link not permitted, rename '/home/ubuntu/.c9/node_modules/nak' -> '/home/ubuntu/.c9/node_modules/.nak.DELETE'
+426 verbose stack     at Error (native)
+427 verbose cwd /home/ubuntu/.c9
+428 error Linux 4.14.104-95.84.amzn2.x86_64
+429 error argv "/opt/c9/node/bin/node" "/home/ubuntu/.c9/node/bin/npm" "install" "--production" "https://dhj20r2nmszcd.cloudfront.net/static/cloud9ide-nak-3cb2f94.tar.gz"
+430 error node v6.3.1
+431 error npm  v3.10.3
+432 error path /home/ubuntu/.c9/node_modules/nak
+433 error code EXDEV
+434 error errno -18
+435 error syscall rename
+436 error EXDEV: cross-device link not permitted, rename '/home/ubuntu/.c9/node_modules/nak' -> '/home/ubuntu/.c9/node_modules/.nak.DELETE'
+437 error If you need help, you may report this error at:
+437 error     <https://github.com/npm/npm/issues>
+438 verbose exit [ -18, true ]

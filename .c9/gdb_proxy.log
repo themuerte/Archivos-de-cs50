@@ -1,0 +1,734 @@
+
+
+Fri Aug 23 2019 23:22:06 GMT+0000 (Coordinated Universal Time)1-target-select remote localhost:15470
+
+GDB: =thread-group-added,id="i1"
+GDB: ~"Reading symbols from notes..."
+GDB: ~"done.\n"
+GDB: =tsv-created,name="trace_timestamp",initial="0"\n
+GDB: =thread-group-started,id="i1",pid="12588"
+GDB: =thread-created,id="1",group-id="i1"
+GDB: ~"Reading /lib64/ld-linux-x86-64.so.2 from remote target...\n"
+GDB: &"warning: File transfers from remote targets can be slow. Use \"set sysroot\" to access files locally instead.\n"
+GDB: ~"Reading /lib64/ld-linux-x86-64.so.2 from remote target...\n"
+GDB: =library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="target:/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7dd5f10",to="0x00007ffff7df4b20"}]
+GDB: ~"Reading /lib64/ld-2.27.so from remote target...\n"
+GDB: ~"Reading /lib64/.debug/ld-2.27.so from remote target...\n"
+GDB: ~"0x00007ffff7dd6090 in ?? () from target:/lib64/ld-linux-x86-64.so.2\n"
+GDB: *stopped,frame={addr="0x00007ffff7dd6090",func="??",args=[],from="target:/lib64/ld-linux-x86-64.so.2"},thread-id="1",stopped-threads="all",core="1"
+GDB: 1^connected
+2set breakpoint condition-evaluation host
+
+GDB: &"set breakpoint condition-evaluation host\n"
+GDB: =cmd-param-changed,param="breakpoint condition-evaluation",value="host"
+GDB: 2^done
+PROXY: server connected
+SENDING: Content-Length:9
+
+"connect"
+PLUGIN: Content-Length:29
+
+{"command":"bp-list","_id":1}
+3-break-list 
+
+GDB: 3^done,BreakpointTable={nr_rows="0",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[]}
+SENDING: Content-Length:510
+
+{"_seq":"3","state":"done","status":{"BreakpointTable":{"nr_rows":"0","nr_cols":"6","hdr":[{"width":"7","alignment":"-1","col_name":"number","colhdr":"Num"},{"width":"14","alignment":"-1","col_name":"type","colhdr":"Type"},{"width":"4","alignment":"-1","col_name":"disp","colhdr":"Disp"},{"width":"3","alignment":"-1","col_name":"enabled","colhdr":"Enb"},{"width":"10","alignment":"-1","col_name":"addr","colhdr":"Address"},{"width":"40","alignment":"2","col_name":"what","colhdr":"What"}],"body":[]}},"_id":1}
+PLUGIN: Content-Length:223
+
+{"path":"/pset3/music/notes.c","line":47,"column":8,"text":"notes.c","content":"        int f = frequency(note);","time":1566602459992,"enabled":true,"fullpath":"/home/ubuntu/pset3/music/notes.c","command":"bp-set","_id":2}
+4-break-insert "/home/ubuntu/pset3/music/notes.c:48"
+
+GDB: 4^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000042346b",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48",thread-groups=["i1"],times="0",original-location="/home/ubuntu/pset3/music/notes.c:48"}
+SENDING: Content-Length:326
+
+{"_seq":"4","state":"done","status":{"bkpt":{"number":"1","type":"breakpoint","disp":"keep","enabled":"y","addr":"0x000000000042346b","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","thread-groups":["i1"],"times":"0","original-location":"/home/ubuntu/pset3/music/notes.c:48"}},"_id":2}
+PLUGIN: Content-Length:216
+
+{"path":"/pset3/music/helpers.c","line":33,"column":4,"text":"helpers.c","content":"    switch(note[0])","time":1566602483502,"enabled":true,"fullpath":"/home/ubuntu/pset3/music/helpers.c","command":"bp-set","_id":3}
+5-break-insert "/home/ubuntu/pset3/music/helpers.c:34"
+
+GDB: 5^done,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x00000000004229c1",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="34",thread-groups=["i1"],times="0",original-location="/home/ubuntu/pset3/music/helpers.c:34"}
+SENDING: Content-Length:337
+
+{"_seq":"5","state":"done","status":{"bkpt":{"number":"2","type":"breakpoint","disp":"keep","enabled":"y","addr":"0x00000000004229c1","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"34","thread-groups":["i1"],"times":"0","original-location":"/home/ubuntu/pset3/music/helpers.c:34"}},"_id":3}
+PLUGIN: Content-Length:30
+
+{"command":"continue","_id":4}
+6-exec-continue 
+
+GDB: 6^running
+SENDING: Content-Length:50
+
+{"_seq":"6","state":"running","status":{},"_id":4}
+GDB: *running,thread-id="all"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libcrypt.so.1 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libcrypt.so.1",target-name="/lib/x86_64-linux-gnu/libcrypt.so.1",host-name="target:/lib/x86_64-linux-gnu/libcrypt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7b9dd50",to="0x00007ffff7ba38b8"}]
+GDB: ~"Reading /usr/local/lib/libcs50.so.9 from remote target...\n"
+GDB: =library-loaded,id="/usr/local/lib/libcs50.so.9",target-name="/usr/local/lib/libcs50.so.9",host-name="target:/usr/local/lib/libcs50.so.9",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff799abc0",to="0x00007ffff799b9a9"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libm.so.6 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="target:/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7607a80",to="0x00007ffff76c62f5"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libpthread.so.0 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libpthread.so.0",target-name="/lib/x86_64-linux-gnu/libpthread.so.0",host-name="target:/lib/x86_64-linux-gnu/libpthread.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff73e2bb0",to="0x00007ffff73f10f1"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/librt.so.1 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/librt.so.1",target-name="/lib/x86_64-linux-gnu/librt.so.1",host-name="target:/lib/x86_64-linux-gnu/librt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71d7200",to="0x00007ffff71da70c"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libdl.so.2 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libdl.so.2",target-name="/lib/x86_64-linux-gnu/libdl.so.2",host-name="target:/lib/x86_64-linux-gnu/libdl.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6fd1e50",to="0x00007ffff6fd2bde"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libgcc_s.so.1 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libgcc_s.so.1",target-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",host-name="target:/lib/x86_64-linux-gnu/libgcc_s.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6dbbac0",to="0x00007ffff6dcc3fd"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libc.so.6 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="target:/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69e92d0",to="0x00007ffff6b61c3c"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libcrypt-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libcrypt-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libm-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libm-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/librt-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/librt-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libdl-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libdl-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/bdc55c07d5e5b1d8ab38e2c19b1f535855e084.debug from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/bdc55c07d5e5b1d8ab38e2c19b1f535855e084.debug from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libc-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libc-2.27.so from remote target...\n"
+GDB: =breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000042346b",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48",thread-groups=["i1"],times="1",original-location="/home/ubuntu/pset3/music/notes.c:48"}
+GDB: ~"\n"
+GDB: ~"Breakpoint 1, main (argc=2, argv=0x7fffffffe6d8) at notes.c:48\n"
+GDB: ~"48\t        int f = frequency(note);\n"
+GDB: *stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x000000000042346b",func="main",args=[{name="argc",value="2"},{name="argv",value="0x7fffffffe6d8"}],file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"},thread-id="1",stopped-threads="all",core="1"
+7-stack-list-frames 0 50
+
+GDB: 7^done,stack=[frame={level="0",addr="0x000000000042346b",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+8-stack-list-arguments --simple-values 0 50
+
+GDB: 8^done,stack-args=[frame={level="0",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+9-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 9^done,locals=[{name="note",type="char [4]"},{name="f",type="int",value="4347981"},{name="i",type="int",value="0"},{name="n",type="int",value="12"},{name="octave",type="int",value="5"},{name="s",type="song",value="0xecc290"}]
+10-var-update --all-values *
+
+GDB: 10^done,changelist=[]
+11-var-create - * s
+
+GDB: 11^done,name="var1",numchild="5",value="0xecc290",type="song",thread-id="1",has_more="0"
+12-var-create - * octave
+
+GDB: 12^done,name="var2",numchild="0",value="5",type="int",thread-id="1",has_more="0"
+13-var-create - * n
+
+GDB: 13^done,name="var3",numchild="0",value="12",type="int",thread-id="1",has_more="0"
+14-var-create - * i
+
+GDB: 14^done,name="var4",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+15-var-create - * f
+
+GDB: 15^done,name="var5",numchild="0",value="4347981",type="int",thread-id="1",has_more="0"
+16-var-create - * note
+
+GDB: 16^done,name="var6",numchild="4",value="[4]",type="char [4]",thread-id="1",has_more="0"
+17-var-create - * argv
+
+GDB: 17^done,name="var7",numchild="1",value="0x7fffffffe6d8",type="string *",thread-id="1",has_more="0"
+18-var-create - * argc
+
+GDB: 18^done,name="var8",numchild="0",value="2",type="int",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:816
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000042346b","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"},{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"}],"locals":[{"name":"note","type":"char [4]","objname":"var6","numchild":"4"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:26
+
+{"command":"next","_id":5}
+19-exec-next 
+
+GDB: 19^running
+SENDING: Content-Length:51
+
+{"_seq":"19","state":"running","status":{},"_id":5}
+GDB: *running,thread-id="all"
+GDB: =breakpoint-modified,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x00000000004229c1",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="34",thread-groups=["i1"],times="1",original-location="/home/ubuntu/pset3/music/helpers.c:34"}
+GDB: ~"\n"
+GDB: ~"Breakpoint 2, frequency (note=0x7fffffffe5bc \"C5\") at helpers.c:34\n"
+GDB: ~"34\t    switch(note[0])\n"
+GDB: *stopped,reason="breakpoint-hit",disp="keep",bkptno="2",frame={addr="0x00000000004229c1",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="34"},thread-id="1",stopped-threads="all",core="1"
+20-stack-list-frames 0 50
+
+GDB: 20^done,stack=[frame={level="0",addr="0x00000000004229c1",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="34"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+21-stack-list-arguments --simple-values 0 50
+
+GDB: 21^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+22-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 22^done,locals=[{name="res",type="float",value="0"},{name="fre",type="int",value="0"}]
+23-var-update --all-values *
+
+GDB: 23^done,changelist=[]
+24-var-create - * fre
+
+GDB: 24^done,name="var9",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+25-var-create - * res
+
+GDB: 25^done,name="var10",numchild="0",value="0",type="float",thread-id="1",has_more="0"
+26-var-create - * note
+
+GDB: 26^done,name="var11",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1234
+
+{"thread":"1","frames":[{"level":"0","addr":"0x00000000004229c1","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"34","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var11","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"0","objname":"var10","numchild":"0"},{"name":"fre","type":"int","value":"0","objname":"var9","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:26
+
+{"command":"next","_id":6}
+27-exec-next 
+
+GDB: 27^running
+SENDING: Content-Length:51
+
+{"_seq":"27","state":"running","status":{},"_id":6}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x0000000000422a1b",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="38"},thread-id="1",stopped-threads="all",core="1"
+28-stack-list-frames 0 50
+
+GDB: 28^done,stack=[frame={level="0",addr="0x0000000000422a1b",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="38"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+29-stack-list-arguments --simple-values 0 50
+
+GDB: 29^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+30-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 30^done,locals=[{name="res",type="float",value="0"},{name="fre",type="int",value="0"}]
+31-var-update --all-values *
+
+GDB: 31^done,changelist=[]
+32-var-create - * fre
+
+GDB: 32^done,name="var12",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+33-var-create - * res
+
+GDB: 33^done,name="var13",numchild="0",value="0",type="float",thread-id="1",has_more="0"
+34-var-create - * note
+
+GDB: 34^done,name="var14",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1235
+
+{"thread":"1","frames":[{"level":"0","addr":"0x0000000000422a1b","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"38","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var14","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"0","objname":"var13","numchild":"0"},{"name":"fre","type":"int","value":"0","objname":"var12","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:56
+
+{"exp":"eighths","f":0,"t":"1","command":"eval","_id":7}
+35-data-evaluate-expression --thread 1 --frame 0 "eighths"
+
+GDB: 35^error,msg="No symbol \"eighths\" in current context."
+SENDING: Content-Length:98
+
+{"_seq":"35","state":"error","status":{"msg":"No symbol \"eighths\" in current context."},"_id":7}
+PLUGIN: Content-Length:54
+
+{"exp":"break","f":0,"t":"1","command":"eval","_id":8}
+36-data-evaluate-expression --thread 1 --frame 0 "break"
+
+GDB: 36^error,msg="No symbol \"break\" in current context."
+SENDING: Content-Length:96
+
+{"_seq":"36","state":"error","status":{"msg":"No symbol \"break\" in current context."},"_id":8}
+PLUGIN: Content-Length:57
+
+{"exp":"respecto","f":0,"t":"1","command":"eval","_id":9}
+37-data-evaluate-expression --thread 1 --frame 0 "respecto"
+
+GDB: 37^error,msg="No symbol \"respecto\" in current context."
+SENDING: Content-Length:99
+
+{"_seq":"37","state":"error","status":{"msg":"No symbol \"respecto\" in current context."},"_id":9}
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":10}
+38-exec-next 
+
+GDB: 38^running
+SENDING: Content-Length:52
+
+{"_seq":"38","state":"running","status":{},"_id":10}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x0000000000422a20",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="39"},thread-id="1",stopped-threads="all",core="1"
+39-stack-list-frames 0 50
+
+GDB: 39^done,stack=[frame={level="0",addr="0x0000000000422a20",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="39"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+40-stack-list-arguments --simple-values 0 50
+
+GDB: 40^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+41-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 41^done,locals=[{name="res",type="float",value="-9"},{name="fre",type="int",value="0"}]
+42-var-update --all-values *
+
+GDB: 42^done,changelist=[{name="var13",value="-9",in_scope="true",type_changed="false",has_more="0"},{name="var10",value="-9",in_scope="true",type_changed="false",has_more="0"}]
+43-var-create - * fre
+
+GDB: 43^done,name="var15",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+44-var-create - * res
+
+GDB: 44^done,name="var16",numchild="0",value="-9",type="float",thread-id="1",has_more="0"
+45-var-create - * note
+
+GDB: 45^done,name="var17",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1236
+
+{"thread":"1","frames":[{"level":"0","addr":"0x0000000000422a20","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"39","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var17","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"-9","objname":"var16","numchild":"0"},{"name":"fre","type":"int","value":"0","objname":"var15","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":11}
+46-exec-next 
+
+GDB: 46^running
+SENDING: Content-Length:52
+
+{"_seq":"46","state":"running","status":{},"_id":11}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x0000000000422a87",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="81"},thread-id="1",stopped-threads="all",core="1"
+47-stack-list-frames 0 50
+
+GDB: 47^done,stack=[frame={level="0",addr="0x0000000000422a87",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="81"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+48-stack-list-arguments --simple-values 0 50
+
+GDB: 48^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+49-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 49^done,locals=[{name="res",type="float",value="-9"},{name="fre",type="int",value="0"}]
+50-var-update --all-values *
+
+GDB: 50^done,changelist=[]
+51-var-create - * fre
+
+GDB: 51^done,name="var18",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+52-var-create - * res
+
+GDB: 52^done,name="var19",numchild="0",value="-9",type="float",thread-id="1",has_more="0"
+53-var-create - * note
+
+GDB: 53^done,name="var20",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1236
+
+{"thread":"1","frames":[{"level":"0","addr":"0x0000000000422a87","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"81","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var20","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"-9","objname":"var19","numchild":"0"},{"name":"fre","type":"int","value":"0","objname":"var18","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":12}
+54-exec-next 
+
+GDB: 54^running
+SENDING: Content-Length:52
+
+{"_seq":"54","state":"running","status":{},"_id":12}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x0000000000422b1e",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="88"},thread-id="1",stopped-threads="all",core="8"
+55-stack-list-frames 0 50
+
+GDB: 55^done,stack=[frame={level="0",addr="0x0000000000422b1e",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="88"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+56-stack-list-arguments --simple-values 0 50
+
+GDB: 56^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+57-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 57^done,locals=[{name="res",type="float",value="-9"},{name="fre",type="int",value="0"}]
+58-var-update --all-values *
+
+GDB: 58^done,changelist=[]
+59-var-create - * fre
+
+GDB: 59^done,name="var21",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+60-var-create - * res
+
+GDB: 60^done,name="var22",numchild="0",value="-9",type="float",thread-id="1",has_more="0"
+61-var-create - * note
+
+GDB: 61^done,name="var23",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1236
+
+{"thread":"1","frames":[{"level":"0","addr":"0x0000000000422b1e","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"88","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var23","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"-9","objname":"var22","numchild":"0"},{"name":"fre","type":"int","value":"0","objname":"var21","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":13}
+62-exec-next 
+
+GDB: 62^running
+SENDING: Content-Length:52
+
+{"_seq":"62","state":"running","status":{},"_id":13}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x0000000000422bb5",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="94"},thread-id="1",stopped-threads="all",core="8"
+63-stack-list-frames 0 50
+
+GDB: 63^done,stack=[frame={level="0",addr="0x0000000000422bb5",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="94"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+64-stack-list-arguments --simple-values 0 50
+
+GDB: 64^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+65-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 65^done,locals=[{name="res",type="float",value="-9"},{name="fre",type="int",value="0"}]
+66-var-update --all-values *
+
+GDB: 66^done,changelist=[]
+67-var-create - * fre
+
+GDB: 67^done,name="var24",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+68-var-create - * res
+
+GDB: 68^done,name="var25",numchild="0",value="-9",type="float",thread-id="1",has_more="0"
+69-var-create - * note
+
+GDB: 69^done,name="var26",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1236
+
+{"thread":"1","frames":[{"level":"0","addr":"0x0000000000422bb5","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"94","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var26","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"-9","objname":"var25","numchild":"0"},{"name":"fre","type":"int","value":"0","objname":"var24","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":14}
+70-exec-next 
+
+GDB: 70^running
+SENDING: Content-Length:52
+
+{"_seq":"70","state":"running","status":{},"_id":14}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x0000000000422cee",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="98"},thread-id="1",stopped-threads="all",core="8"
+71-stack-list-frames 0 50
+
+GDB: 71^done,stack=[frame={level="0",addr="0x0000000000422cee",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="98"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+72-stack-list-arguments --simple-values 0 50
+
+GDB: 72^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+73-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 73^done,locals=[{name="res",type="float",value="3"},{name="fre",type="int",value="0"}]
+74-var-update --all-values *
+
+GDB: 74^done,changelist=[{name="var25",value="3",in_scope="true",type_changed="false",has_more="0"},{name="var22",value="3",in_scope="true",type_changed="false",has_more="0"},{name="var19",value="3",in_scope="true",type_changed="false",has_more="0"},{name="var16",value="3",in_scope="true",type_changed="false",has_more="0"},{name="var13",value="3",in_scope="true",type_changed="false",has_more="0"},{name="var10",value="3",in_scope="true",type_changed="false",has_more="0"}]
+75-var-create - * fre
+
+GDB: 75^done,name="var27",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+76-var-create - * res
+
+GDB: 76^done,name="var28",numchild="0",value="3",type="float",thread-id="1",has_more="0"
+77-var-create - * note
+
+GDB: 77^done,name="var29",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1235
+
+{"thread":"1","frames":[{"level":"0","addr":"0x0000000000422cee","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"98","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var29","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"3","objname":"var28","numchild":"0"},{"name":"fre","type":"int","value":"0","objname":"var27","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":15}
+78-exec-next 
+
+GDB: 78^running
+SENDING: Content-Length:52
+
+{"_seq":"78","state":"running","status":{},"_id":15}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x000000000042302a",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="104"},thread-id="1",stopped-threads="all",core="8"
+79-stack-list-frames 0 50
+
+GDB: 79^done,stack=[frame={level="0",addr="0x000000000042302a",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="104"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+80-stack-list-arguments --simple-values 0 50
+
+GDB: 80^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+81-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 81^done,locals=[{name="res",type="float",value="3"},{name="fre",type="int",value="0"}]
+82-var-update --all-values *
+
+GDB: 82^done,changelist=[]
+83-var-create - * fre
+
+GDB: 83^done,name="var30",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+84-var-create - * res
+
+GDB: 84^done,name="var31",numchild="0",value="3",type="float",thread-id="1",has_more="0"
+85-var-create - * note
+
+GDB: 85^done,name="var32",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1236
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000042302a","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"104","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var32","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"3","objname":"var31","numchild":"0"},{"name":"fre","type":"int","value":"0","objname":"var30","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":16}
+86-exec-next 
+
+GDB: 86^running
+SENDING: Content-Length:52
+
+{"_seq":"86","state":"running","status":{},"_id":16}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x000000000042309a",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="105"},thread-id="1",stopped-threads="all",core="10"
+87-stack-list-frames 0 50
+
+GDB: 87^done,stack=[frame={level="0",addr="0x000000000042309a",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="105"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+88-stack-list-arguments --simple-values 0 50
+
+GDB: 88^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+89-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 89^done,locals=[{name="res",type="float",value="3"},{name="fre",type="int",value="1"}]
+90-var-update --all-values *
+
+GDB: 90^done,changelist=[{name="var30",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var27",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var24",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var21",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var18",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var15",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var12",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var9",value="1",in_scope="true",type_changed="false",has_more="0"}]
+91-var-create - * fre
+
+GDB: 91^done,name="var33",numchild="0",value="1",type="int",thread-id="1",has_more="0"
+92-var-create - * res
+
+GDB: 92^done,name="var34",numchild="0",value="3",type="float",thread-id="1",has_more="0"
+93-var-create - * note
+
+GDB: 93^done,name="var35",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1236
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000042309a","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"105","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var35","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"3","objname":"var34","numchild":"0"},{"name":"fre","type":"int","value":"1","objname":"var33","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:53
+
+{"exp":"fre","f":0,"t":"1","command":"eval","_id":17}
+94-data-evaluate-expression --thread 1 --frame 0 "fre"
+
+GDB: 94^done,value="1"
+SENDING: Content-Length:60
+
+{"_seq":"94","state":"done","status":{"value":"1"},"_id":17}
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":18}
+95-exec-next 
+
+GDB: 95^running
+SENDING: Content-Length:52
+
+{"_seq":"95","state":"running","status":{},"_id":18}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x00000000004230ef",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="107"},thread-id="1",stopped-threads="all",core="10"
+96-stack-list-frames 0 50
+
+GDB: 96^done,stack=[frame={level="0",addr="0x00000000004230ef",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="107"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+97-stack-list-arguments --simple-values 0 50
+
+GDB: 97^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+98-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 98^done,locals=[{name="res",type="float",value="3"},{name="fre",type="int",value="440"}]
+99-var-update --all-values *
+
+GDB: 99^done,changelist=[{name="var33",value="440",in_scope="true",type_changed="false",has_more="0"},{name="var30",value="440",in_scope="true",type_changed="false",has_more="0"},{name="var27",value="440",in_scope="true",type_changed="false",has_more="0"},{name="var24",value="440",in_scope="true",type_changed="false",has_more="0"},{name="var21",value="440",in_scope="true",type_changed="false",has_more="0"},{name="var18",value="440",in_scope="true",type_changed="false",has_more="0"},{name="var15",value="440",in_scope="true",type_changed="false",has_more="0"},{name="var12",value="440",in_scope="true",type_changed="false",has_more="0"},{name="var9",value="440",in_scope="true",type_changed="false",has_more="0"}]
+100-var-create - * fre
+
+GDB: 100^done,name="var36",numchild="0",value="440",type="int",thread-id="1",has_more="0"
+101-var-create - * res
+
+GDB: 101^done,name="var37",numchild="0",value="3",type="float",thread-id="1",has_more="0"
+102-var-create - * note
+
+GDB: 102^done,name="var38",numchild="1",value="0x7fffffffe5bc \"C5\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:1238
+
+{"thread":"1","frames":[{"level":"0","addr":"0x00000000004230ef","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"107","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C5\"","objname":"var38","numchild":"1"}],"locals":[{"name":"res","type":"float","value":"3","objname":"var37","numchild":"0"},{"name":"fre","type":"int","value":"440","objname":"var36","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"0","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"4347981","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:31
+
+{"command":"continue","_id":19}
+103-exec-continue 
+
+GDB: 103^running
+SENDING: Content-Length:53
+
+{"_seq":"103","state":"running","status":{},"_id":19}
+GDB: *running,thread-id="all"
+GDB: =breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000042346b",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48",thread-groups=["i1"],times="2",original-location="/home/ubuntu/pset3/music/notes.c:48"}
+GDB: ~"\n"
+GDB: ~"Breakpoint 1, main (argc=2, argv=0x7fffffffe6d8) at notes.c:48\n"
+GDB: ~"48\t        int f = frequency(note);\n"
+GDB: *stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x000000000042346b",func="main",args=[{name="argc",value="2"},{name="argv",value="0x7fffffffe6d8"}],file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"},thread-id="1",stopped-threads="all",core="5"
+104-stack-list-frames 0 50
+
+GDB: 104^done,stack=[frame={level="0",addr="0x000000000042346b",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+105-stack-list-arguments --simple-values 0 50
+
+GDB: 105^done,stack-args=[frame={level="0",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+106-var-update --all-values *
+
+GDB: 106^done,changelist=[{name="var38",in_scope="false",type_changed="false",has_more="0"},{name="var37",in_scope="false",type_changed="false",has_more="0"},{name="var36",in_scope="false",type_changed="false",has_more="0"},{name="var35",in_scope="false",type_changed="false",has_more="0"},{name="var34",in_scope="false",type_changed="false",has_more="0"},{name="var33",in_scope="false",type_changed="false",has_more="0"},{name="var32",in_scope="false",type_changed="false",has_more="0"},{name="var31",in_scope="false",type_changed="false",has_more="0"},{name="var30",in_scope="false",type_changed="false",has_more="0"},{name="var29",in_scope="false",type_changed="false",has_more="0"},{name="var28",in_scope="false",type_changed="false",has_more="0"},{name="var27",in_scope="false",type_changed="false",has_more="0"},{name="var26",in_scope="false",type_changed="false",has_more="0"},{name="var25",in_scope="false",type_changed="false",has_more="0"},{name="var24",in_scope="false",type_changed="false",has_more="0"},{name="var23",in_scope="false",type_changed="false",has_more="0"},{name="var22",in_scope="false",type_changed="false",has_more="0"},{name="var21",in_scope="false",type_changed="false",has_more="0"},{name="var20",in_scope="false",type_changed="false",has_more="0"},{name="var19",in_scope="false",type_changed="false",has_more="0"},{name="var18",in_scope="false",type_changed="false",has_more="0"},{name="var17",in_scope="false",type_changed="false",has_more="0"},{name="var16",in_scope="false",type_changed="false",has_more="0"},{name="var15",in_scope="false",type_changed="false",has_more="0"},{name="var14",in_scope="false",type_changed="false",has_more="0"},{name="var13",in_scope="false",type_changed="false",has_more="0"},{name="var12",in_scope="false",type_changed="false",has_more="0"},{name="var11",in_scope="false",type_changed="false",has_more="0"},{name="var10",in_scope="false",type_changed="false",has_more="0"},{name="var9",in_scope="false",type_changed="false",has_more="0"},{name="var5",value="440",in_scope="true",type_changed="false",has_more="0"},{name="var4",value="1",in_scope="true",type_changed="false",has_more="0"}]
+-stack-select-frame 0
+
+SENDING: Content-Length:812
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000042346b","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"1","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"440","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:236
+
+{"path":"/pset3/music/notes.c","line":47,"column":8,"text":"notes.c","content":"        int f = frequency(note);","time":1566602459992,"enabled":true,"fullpath":"/home/ubuntu/pset3/music/notes.c","command":"bp-change","_id":20,"id":"1"}
+107-break-enable 1
+
+PLUGIN: Content-Length:229
+
+{"path":"/pset3/music/helpers.c","line":33,"column":4,"text":"helpers.c","content":"    switch(note[0])","time":1566602483502,"enabled":true,"fullpath":"/home/ubuntu/pset3/music/helpers.c","command":"bp-change","_id":21,"id":"2"}
+108-break-enable 2
+
+GDB: 107^done
+SENDING: Content-Length:50
+
+{"_seq":"107","state":"done","status":{},"_id":20}
+GDB: 108^done
+SENDING: Content-Length:50
+
+{"_seq":"108","state":"done","status":{},"_id":21}
+PLUGIN: Content-Length:31
+
+{"command":"continue","_id":22}
+109-exec-continue 
+
+GDB: 109^running
+SENDING: Content-Length:53
+
+{"_seq":"109","state":"running","status":{},"_id":22}
+GDB: *running,thread-id="all"
+GDB: =breakpoint-modified,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x00000000004229c1",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="34",thread-groups=["i1"],times="2",original-location="/home/ubuntu/pset3/music/helpers.c:34"}
+GDB: ~"\n"
+GDB: ~"Breakpoint 2, frequency (note=0x7fffffffe5bc \"C#5\") at helpers.c:34\n"
+GDB: ~"34\t    switch(note[0])\n"
+GDB: *stopped,reason="breakpoint-hit",disp="keep",bkptno="2",frame={addr="0x00000000004229c1",func="frequency",args=[{name="note",value="0x7fffffffe5bc \"C#5\""}],file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="34"},thread-id="1",stopped-threads="all",core="6"
+110-stack-list-frames 0 50
+
+GDB: 110^done,stack=[frame={level="0",addr="0x00000000004229c1",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="34"},frame={level="1",addr="0x0000000000423476",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+111-stack-list-arguments --simple-values 0 50
+
+GDB: 111^done,stack-args=[frame={level="0",args=[{name="note",type="string",value="0x7fffffffe5bc \"C#5\""}]},frame={level="1",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+112-var-update --all-values *
+
+GDB: 112^done,changelist=[{name="var38",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var37",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var36",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var35",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var34",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var33",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var32",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var31",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var30",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var29",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var28",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var27",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var26",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var25",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var24",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var23",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var22",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var21",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var20",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var19",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var18",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var17",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var16",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var15",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var14",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var13",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var12",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var11",value="0x7fffffffe5bc \"C#5\"",in_scope="true",type_changed="false",has_more="0"},{name="var10",value="0",in_scope="true",type_changed="false",has_more="0"},{name="var9",value="0",in_scope="true",type_changed="false",has_more="0"}]
+-stack-select-frame 0
+
+SENDING: Content-Length:1231
+
+{"thread":"1","frames":[{"level":"0","addr":"0x00000000004229c1","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"34","exists":true,"args":[{"name":"note","type":"string","value":"0x7fffffffe5bc \"C#5\"","objname":"var11","numchild":"1"}],"locals":[{"name":"fre","type":"int","value":"0","objname":"var9","numchild":"0"},{"name":"res","type":"float","value":"0","objname":"var10","numchild":"0"}]},{"level":"1","addr":"0x0000000000423476","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"1","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"440","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:31
+
+{"command":"continue","_id":23}
+113-exec-continue 
+
+GDB: 113^running
+SENDING: Content-Length:53
+
+{"_seq":"113","state":"running","status":{},"_id":23}
+GDB: *running,thread-id="all"
+GDB: =breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000042346b",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48",thread-groups=["i1"],times="3",original-location="/home/ubuntu/pset3/music/notes.c:48"}
+GDB: ~"\n"
+GDB: ~"Breakpoint 1, main (argc=2, argv=0x7fffffffe6d8) at notes.c:48\n"
+GDB: ~"48\t        int f = frequency(note);\n"
+GDB: *stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x000000000042346b",func="main",args=[{name="argc",value="2"},{name="argv",value="0x7fffffffe6d8"}],file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"},thread-id="1",stopped-threads="all",core="6"
+114-stack-list-frames 0 50
+
+GDB: 114^done,stack=[frame={level="0",addr="0x000000000042346b",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48"}]
+115-stack-list-arguments --simple-values 0 50
+
+GDB: 115^done,stack-args=[frame={level="0",args=[{name="argc",type="int",value="2"},{name="argv",type="string *",value="0x7fffffffe6d8"}]}]
+116-var-update --all-values *
+
+GDB: 116^done,changelist=[{name="var38",in_scope="false",type_changed="false",has_more="0"},{name="var37",in_scope="false",type_changed="false",has_more="0"},{name="var36",in_scope="false",type_changed="false",has_more="0"},{name="var35",in_scope="false",type_changed="false",has_more="0"},{name="var34",in_scope="false",type_changed="false",has_more="0"},{name="var33",in_scope="false",type_changed="false",has_more="0"},{name="var32",in_scope="false",type_changed="false",has_more="0"},{name="var31",in_scope="false",type_changed="false",has_more="0"},{name="var30",in_scope="false",type_changed="false",has_more="0"},{name="var29",in_scope="false",type_changed="false",has_more="0"},{name="var28",in_scope="false",type_changed="false",has_more="0"},{name="var27",in_scope="false",type_changed="false",has_more="0"},{name="var26",in_scope="false",type_changed="false",has_more="0"},{name="var25",in_scope="false",type_changed="false",has_more="0"},{name="var24",in_scope="false",type_changed="false",has_more="0"},{name="var23",in_scope="false",type_changed="false",has_more="0"},{name="var22",in_scope="false",type_changed="false",has_more="0"},{name="var21",in_scope="false",type_changed="false",has_more="0"},{name="var20",in_scope="false",type_changed="false",has_more="0"},{name="var19",in_scope="false",type_changed="false",has_more="0"},{name="var18",in_scope="false",type_changed="false",has_more="0"},{name="var17",in_scope="false",type_changed="false",has_more="0"},{name="var16",in_scope="false",type_changed="false",has_more="0"},{name="var15",in_scope="false",type_changed="false",has_more="0"},{name="var14",in_scope="false",type_changed="false",has_more="0"},{name="var13",in_scope="false",type_changed="false",has_more="0"},{name="var12",in_scope="false",type_changed="false",has_more="0"},{name="var11",in_scope="false",type_changed="false",has_more="0"},{name="var10",in_scope="false",type_changed="false",has_more="0"},{name="var9",in_scope="false",type_changed="false",has_more="0"},{name="var4",value="2",in_scope="true",type_changed="false",has_more="0"}]
+-stack-select-frame 0
+
+SENDING: Content-Length:812
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000042346b","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","exists":true,"args":[{"name":"argv","type":"string *","value":"0x7fffffffe6d8","address":140737488348888,"objname":"var7","numchild":"1"},{"name":"argc","type":"int","value":"2","objname":"var8","numchild":"0"}],"locals":[{"name":"s","type":"song","value":"0xecc290","objname":"var1","numchild":"5"},{"name":"octave","type":"int","value":"5","objname":"var2","numchild":"0"},{"name":"n","type":"int","value":"12","objname":"var3","numchild":"0"},{"name":"i","type":"int","value":"2","objname":"var4","numchild":"0"},{"name":"f","type":"int","value":"440","objname":"var5","numchild":"0"},{"name":"note","type":"char [4]","objname":"var6","numchild":"4"}]}]}
+GDB: ^done
+SIGINT
+
+
+Fri Aug 23 2019 23:27:14 GMT+0000 (Coordinated Universal Time)1-target-select remote localhost:15470
+
+GDB: =thread-group-added,id="i1"
+GDB: ~"Reading symbols from notes..."
+GDB: ~"done.\n"
+GDB: =tsv-created,name="trace_timestamp",initial="0"\n
+GDB: =thread-group-started,id="i1",pid="13315"
+GDB: =thread-created,id="1",group-id="i1"
+GDB: ~"Reading /lib64/ld-linux-x86-64.so.2 from remote target...\n"
+GDB: &"warning: File transfers from remote targets can be slow. Use \"set sysroot\" to access files locally instead.\n"
+GDB: ~"Reading /lib64/ld-linux-x86-64.so.2 from remote target...\n"
+GDB: =library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="target:/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7dd5f10",to="0x00007ffff7df4b20"}]
+GDB: ~"Reading /lib64/ld-2.27.so from remote target...\n"
+GDB: ~"Reading /lib64/.debug/ld-2.27.so from remote target...\n"
+GDB: ~"0x00007ffff7dd6090 in ?? () from target:/lib64/ld-linux-x86-64.so.2\n"
+GDB: *stopped,frame={addr="0x00007ffff7dd6090",func="??",args=[],from="target:/lib64/ld-linux-x86-64.so.2"},thread-id="1",stopped-threads="all",core="8"
+GDB: 1^connected
+2set breakpoint condition-evaluation host
+
+GDB: &"set breakpoint condition-evaluation host\n"
+GDB: =cmd-param-changed,param="breakpoint condition-evaluation",value="host"
+GDB: 2^done
+PROXY: server connected
+SENDING: Content-Length:9
+
+"connect"
+PLUGIN: Content-Length:29
+
+{"command":"bp-list","_id":1}
+3-break-list 
+
+GDB: 3^done,BreakpointTable={nr_rows="0",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[]}
+SENDING: Content-Length:510
+
+{"_seq":"3","state":"done","status":{"BreakpointTable":{"nr_rows":"0","nr_cols":"6","hdr":[{"width":"7","alignment":"-1","col_name":"number","colhdr":"Num"},{"width":"14","alignment":"-1","col_name":"type","colhdr":"Type"},{"width":"4","alignment":"-1","col_name":"disp","colhdr":"Disp"},{"width":"3","alignment":"-1","col_name":"enabled","colhdr":"Enb"},{"width":"10","alignment":"-1","col_name":"addr","colhdr":"Address"},{"width":"40","alignment":"2","col_name":"what","colhdr":"What"}],"body":[]}},"_id":1}
+PLUGIN: Content-Length:232
+
+{"path":"/pset3/music/notes.c","line":47,"column":8,"text":"notes.c","content":"        int f = frequency(note);","time":1566602459992,"enabled":true,"fullpath":"/home/ubuntu/pset3/music/notes.c","command":"bp-set","_id":2,"id":"1"}
+4-break-insert "/home/ubuntu/pset3/music/notes.c:48"
+
+GDB: 4^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000042347b",func="main",file="notes.c",fullname="/home/ubuntu/pset3/music/notes.c",line="48",thread-groups=["i1"],times="0",original-location="/home/ubuntu/pset3/music/notes.c:48"}
+SENDING: Content-Length:326
+
+{"_seq":"4","state":"done","status":{"bkpt":{"number":"1","type":"breakpoint","disp":"keep","enabled":"y","addr":"0x000000000042347b","func":"main","file":"notes.c","fullname":"/home/ubuntu/pset3/music/notes.c","line":"48","thread-groups":["i1"],"times":"0","original-location":"/home/ubuntu/pset3/music/notes.c:48"}},"_id":2}
+PLUGIN: Content-Length:225
+
+{"path":"/pset3/music/helpers.c","line":33,"column":4,"text":"helpers.c","content":"    switch(note[0])","time":1566602483502,"enabled":true,"fullpath":"/home/ubuntu/pset3/music/helpers.c","command":"bp-set","_id":3,"id":"2"}
+5-break-insert "/home/ubuntu/pset3/music/helpers.c:34"
+
+GDB: 5^done,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x00000000004229c1",func="frequency",file="helpers.c",fullname="/home/ubuntu/pset3/music/helpers.c",line="34",thread-groups=["i1"],times="0",original-location="/home/ubuntu/pset3/music/helpers.c:34"}
+SENDING: Content-Length:337
+
+{"_seq":"5","state":"done","status":{"bkpt":{"number":"2","type":"breakpoint","disp":"keep","enabled":"y","addr":"0x00000000004229c1","func":"frequency","file":"helpers.c","fullname":"/home/ubuntu/pset3/music/helpers.c","line":"34","thread-groups":["i1"],"times":"0","original-location":"/home/ubuntu/pset3/music/helpers.c:34"}},"_id":3}
+PLUGIN: Content-Length:30
+
+{"command":"continue","_id":4}
+6-exec-continue 
+
+GDB: 6^running
+SENDING: Content-Length:50
+
+{"_seq":"6","state":"running","status":{},"_id":4}
+GDB: *running,thread-id="all"
